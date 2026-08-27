@@ -1,0 +1,107 @@
+{
+    "$__mpe_config_收电点赞": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1787819559066,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "D:\\Program Files\\Repository\\MaaGF\\assets\\resource\\pipeline\\收电点赞.json",
+            "savedViewport": {
+                "x": -207,
+                "y": 517,
+                "zoom": 1.31
+            },
+            "filename": "收电点赞",
+            "version": "v1.9.0"
+        }
+    },
+    "切换按钮": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1088,
+                    285,
+                    142,
+                    44
+                ],
+                "expected": [
+                    "宿舍"
+                ]
+            }
+        },
+        "inverse": true,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1148,
+                    251,
+                    31,
+                    18
+                ]
+            }
+        },
+        "next": [
+            "收电点赞"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 520,
+                "y": -39
+            }
+        }
+    },
+    "收电点赞": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    963,
+                    262,
+                    107,
+                    87
+                ],
+                "expected": [
+                    "据点"
+                ]
+            }
+        },
+        "next": [
+            "点击宿舍",
+            "切换按钮"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 260,
+                "y": -143
+            }
+        }
+    },
+    "点击宿舍": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1088,
+                    285,
+                    142,
+                    44
+                ],
+                "expected": [
+                    "宿舍"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 520,
+                "y": -230
+            }
+        }
+    }
+}
