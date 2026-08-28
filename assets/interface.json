@@ -5,7 +5,7 @@
     "license": "MIT",
     "welcome": "首次使用！欢迎使用 MAA!",
     "github": "https://github.com/EighteenDay/MaaGF.git",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "controller": [
         {
             "name": "桌面端",

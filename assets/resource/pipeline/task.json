@@ -1,43 +1,65 @@
 {
-    "切换入口": {
-        "action": {
-            "param": {
-                "target": [
-                    1151,
-                    220,
-                    28,
-                    16
-                ]
-            },
-            "type": "Click"
-        },
-        "next": [
-            "进入宿舍"
-        ]
-    },
-    "点击入口": {
-        "action": {
-            "type": "Click"
-        },
+    "点击参观": {
         "recognition": {
+            "type": "OCR",
             "param": {
-                "expected": [
-                    "宿舍"
-                ],
                 "roi": [
-                    963,
-                    141,
-                    292,
-                    91
+                    20,
+                    929,
+                    231,
+                    103
+                ],
+                "expected": [
+                    "参观"
                 ]
-            },
-            "type": "OCR"
+            }
+        },
+        "action": {
+            "type": "Click"
         }
     },
     "进入宿舍": {
         "next": [
             "点击入口",
             "切换入口"
+        ]
+    },
+    "点击入口": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1430,
+                    268,
+                    190,
+                    58
+                ],
+                "expected": [
+                    "宿舍"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "点击参观"
+        ]
+    },
+    "切换入口": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1509,
+                    341,
+                    38,
+                    20
+                ]
+            }
+        },
+        "next": [
+            "进入宿舍"
         ]
     }
 }
