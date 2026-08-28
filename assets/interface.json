@@ -34,6 +34,10 @@
             "option": [
                 "Dormitory_Task_List"
             ]
+        },
+        {
+            "name": "进入",
+            "entry": "进入宿舍"
         }
     ],
     "option": {
