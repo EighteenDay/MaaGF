@@ -27,7 +27,7 @@
         "**/assets/**/*.json": "jsonc"
     },
     "[json][jsonc]": {
-        "editor.formatOnSave": true,
+        "editor.formatOnSave": false,
         "editor.insertSpaces": true,
         "editor.tabSize": 4,
         "editor.indentSize": "tabSize"
@@ -36,7 +36,9 @@
         "editor.defaultFormatter": "ms-python.black-formatter"
     },
     "[markdown]": {
-        "editor.formatOnSave": true,
+        "editor.formatOnSave": false,
         "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
-    }
+    },
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "SwordofMorning.maapipeline-format"
 }
