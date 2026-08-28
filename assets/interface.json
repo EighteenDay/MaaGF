@@ -5,11 +5,17 @@
     "license": "MIT",
     "welcome": "首次使用！欢迎使用 MAA!",
     "github": "https://github.com/EighteenDay/MaaGF.git",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "controller": [
         {
             "name": "桌面端",
             "type": "Win32",
+            "display_short_side": {
+                "type": "number",
+                "title": "短边分辨率",
+                "description": "默认缩放分辨率的短边长度，用于屏幕适配。",
+                "default": 800
+            },
             "win32": {
                 "class_regex": ".*",
                 "window_regex": "少女前线",
