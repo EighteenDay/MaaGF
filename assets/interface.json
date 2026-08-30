@@ -4,7 +4,7 @@
 	"description": "少女前线自动化。",
 	"license": "MIT",
 	"github": "https://github.com/EighteenDay/MaaGF.git",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"controller": [
 		{
 			"name": "桌面端",
@@ -22,7 +22,9 @@
 		{
 			"name": "少女前线",
 			"path": [
+				
 				"./resource"
+			
 			]
 		}
 	],
@@ -31,11 +33,13 @@
 			"name": "宿舍任务",
 			"entry": "!Dormitory_Entry",
 			"option": [
+				
 				"Dormitory_Task_List"
+			
 			]
 		},
 		{
-			"name": "进入",
+			"name": "收电点赞",
 			"entry": "进入宿舍"
 		}
 	],
@@ -47,7 +51,9 @@
 					"name": "好友点赞偷电",
 					"pipeline_override": {
 						"!Dormitory_Entry": {
+							
 							"next": "!宿舍自动点赞"
+						
 						}
 					}
 				},
@@ -55,7 +61,9 @@
 					"name": "宿舍点击爱心",
 					"pipeline_override": {
 						"!Dormitory_Entry": {
+							
 							"next": "!点击爱心"
+						
 						}
 					}
 				}
