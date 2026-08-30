@@ -9,6 +9,7 @@
 		{
 			"name": "桌面端",
 			"type": "Win32",
+			"display_raw": true,
 			"win32": {
 				"class_regex": ".*",
 				"window_regex": "少女前线",
@@ -22,52 +23,15 @@
 		{
 			"name": "少女前线",
 			"path": [
-				
 				"./resource"
-			
 			]
 		}
 	],
 	"task": [
 		{
-			"name": "宿舍任务",
-			"entry": "!Dormitory_Entry",
-			"option": [
-				
-				"Dormitory_Task_List"
-			
-			]
-		},
-		{
 			"name": "收电点赞",
 			"entry": "进入宿舍"
 		}
 	],
-	"option": {
-		"Dormitory_Task_List": {
-			"type": "select",
-			"cases": [
-				{
-					"name": "好友点赞偷电",
-					"pipeline_override": {
-						"!Dormitory_Entry": {
-							
-							"next": "!宿舍自动点赞"
-						
-						}
-					}
-				},
-				{
-					"name": "宿舍点击爱心",
-					"pipeline_override": {
-						"!Dormitory_Entry": {
-							
-							"next": "!点击爱心"
-						
-						}
-					}
-				}
-			]
-		}
-	}
+	"option": {}
 }
