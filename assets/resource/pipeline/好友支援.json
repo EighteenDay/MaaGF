@@ -1,0 +1,362 @@
+{
+	"新建节点24": {
+		"action": {
+			"param": {"duration": 1},
+			"type": "LongPress"
+		},
+		"next": [
+			"新建节点25"
+		],
+		"recognition": {
+			"param": {
+				"expected": ["任务"],
+				"roi": [57, 136, 120, 38]
+			},
+			"type": "OCR"
+		}
+	},
+	"新建节点25": {
+		"action": {
+			"param": {
+				"begin": [214, 161, 59, 55],
+				"end": [
+					[214, 498, 53, 63]
+				]
+			},
+			"type": "Swipe"
+		},
+		"next": [
+			"新建节点26"
+		],
+		"repeat": 2,
+		"repeat_delay": 500
+	},
+	"新建节点26": {
+		"action": {
+			"param": {"duration": 1},
+			"type": "LongPress"
+		},
+		"next": [
+			"新建节点27"
+		],
+		"recognition": {
+			"param": {
+				"expected": ["00"],
+				"roi": [180, 109, 198, 96]
+			},
+			"type": "OCR"
+		}
+	},
+	"新建节点27": {
+		"action": {
+			"param": {"duration": 1},
+			"type": "LongPress"
+		},
+		"next": [
+			"新建节点28"
+		],
+		"recognition": {
+			"param": {
+				"expected": ["挑战"],
+				"roi": [647, 652, 135, 41]
+			},
+			"type": "OCR"
+		}
+	},
+	"新建节点28": {
+		"action": {
+			"param": {"duration": 1},
+			"type": "LongPress"
+		},
+		"next": [
+			"新建节点29"
+		],
+		"recognition": {
+			"param": {
+				"expected": ["普通"],
+				"roi": [956, 618, 133, 41]
+			},
+			"type": "OCR"
+		}
+	},
+	"新建节点29": {
+		"action": {
+			"param": {
+				"duration": 1,
+				"target": [572, 454, 69, 72]
+			},
+			"type": "LongPress"
+		},
+		"next": [
+			"新建节点30"
+		],
+		"recognition": {
+			"param": {
+				"expected": ["开始"],
+				"roi": [1031, 701, 199, 74]
+			},
+			"type": "OCR"
+		}
+	},
+	"新建节点30": {
+		"action": {
+			"param": {"duration": 1},
+			"type": "LongPress"
+		},
+		"next": [
+			"新建节点31"
+		],
+		"recognition": {
+			"param": {
+				"expected": ["3"],
+				"roi": [77, 472, 37, 61]
+			},
+			"type": "OCR"
+		}
+	},
+	"新建节点31": {
+		"action": {
+			"param": {"duration": 1},
+			"type": "LongPress"
+		},
+		"next": [
+			"新建节点33"
+		],
+		"post_delay": 2500,
+		"recognition": {
+			"param": {
+				"expected": ["确定"],
+				"roi": [1140, 652, 91, 49]
+			},
+			"type": "OCR"
+		}
+	},
+	"新建节点33": {
+		"action": {
+			"param": {
+				"duration": 1,
+				"target": [1041, 704, 179, 68]
+			},
+			"type": "LongPress"
+		},
+		"next": [
+			"新建节点33_副本10"
+		],
+		"pre_delay": 500,
+		"recognition": {
+			"param": {
+				"lower": [
+					[253, 0, 0]
+				],
+				"roi": [670, 540, 48, 49],
+				"upper": [
+					[253, 0, 0]
+				]
+			},
+			"type": "ColorMatch"
+		}
+	},
+	"新建节点33_副本10": {
+		"action": {
+			"param": {
+				"duration": 1,
+				"target": [439, 467, 52, 50]
+			},
+			"type": "LongPress"
+		},
+		"next": [
+			"新建节点34"
+		],
+		"pre_delay": 1500,
+		"recognition": {
+			"param": {
+				"lower": [
+					[255, 204, 0]
+				],
+				"roi": [991, 421, 38, 59],
+				"upper": [
+					[255, 204, 0]
+				]
+			},
+			"type": "ColorMatch"
+		}
+	},
+	"新建节点33_副本10_副本11": {
+		"action": {
+			"param": {
+				"duration": 1,
+				"target": [811, 468, 60, 53]
+			},
+			"type": "LongPress"
+		},
+		"next": [
+			"新建节点34_副本12"
+		],
+		"pre_delay": 1000,
+		"recognition": {
+			"param": {
+				"lower": [
+					[255, 204, 0]
+				],
+				"roi": [991, 421, 38, 59],
+				"upper": [
+					[255, 204, 0]
+				]
+			},
+			"type": "ColorMatch"
+		}
+	},
+	"新建节点34": {
+		"action": {
+			"param": {"duration": 1},
+			"type": "LongPress"
+		},
+		"next": [
+			"新建节点35"
+		],
+		"recognition": {
+			"param": {
+				"expected": ["梯队"],
+				"roi": [869, 115, 181, 56]
+			},
+			"type": "OCR"
+		}
+	},
+	"新建节点34_副本12": {
+		"action": {
+			"param": {"duration": 1},
+			"type": "LongPress"
+		},
+		"next": [
+			"新建节点35_副本13"
+		],
+		"recognition": {
+			"param": {
+				"expected": ["梯队"],
+				"roi": [869, 115, 181, 56]
+			},
+			"type": "OCR"
+		}
+	},
+	"新建节点35": {
+		"action": {
+			"param": {
+				"duration": 1,
+				"target": [327, 207, 234, 78]
+			},
+			"type": "LongPress"
+		},
+		"next": [
+			"新建节点36"
+		],
+		"recognition": {
+			"param": {
+				"expected": ["作战"],
+				"roi": [890, 135, 123, 37]
+			},
+			"type": "OCR"
+		}
+	},
+	"新建节点35_副本13": {
+		"action": {
+			"param": {
+				"duration": 1,
+				"target": [327, 207, 234, 78]
+			},
+			"type": "LongPress"
+		},
+		"next": [
+			"新建节点36_副本14"
+		],
+		"recognition": {
+			"param": {
+				"expected": ["作战"],
+				"roi": [890, 135, 123, 37]
+			},
+			"type": "OCR"
+		}
+	},
+	"新建节点36": {
+		"action": {
+			"param": {
+				"duration": 1,
+				"target": [1088, 651, 142, 53]
+			},
+			"type": "LongPress"
+		},
+		"next": [
+			"新建节点33_副本10_副本11"
+		],
+		"recognition": {
+			"param": {
+				"expected": ["取消"],
+				"roi": [960, 651, 92, 54]
+			},
+			"type": "OCR"
+		}
+	},
+	"新建节点36_副本14": {
+		"action": {
+			"param": {
+				"duration": 1,
+				"target": [1088, 651, 142, 53]
+			},
+			"type": "LongPress"
+		},
+		"next": [
+			"新建节点38"
+		],
+		"post_delay": 500,
+		"recognition": {
+			"param": {
+				"expected": ["取消"],
+				"roi": [960, 651, 92, 54]
+			},
+			"type": "OCR"
+		}
+	},
+	"新建节点38": {
+		"action": {
+			"param": {
+				"duration": 1,
+				"target": [279, 22, 71, 43]
+			},
+			"type": "LongPress"
+		},
+		"next": [
+			"新建节点39"
+		]
+	},
+	"新建节点39": {
+		"action": {
+			"param": {"duration": 1},
+			"type": "LongPress"
+		},
+		"max_hit": 10,
+		"next": [
+			"新建节点33"
+		],
+		"pre_delay": 500,
+		"recognition": {
+			"param": {
+				"expected": ["重"],
+				"roi": [422, 513, 138, 39]
+			},
+			"type": "OCR"
+		}
+	},
+	"进入作战": {
+		"action": {
+			"param": {
+				"duration": 1,
+				"target": [826, 426, 207, 75]
+			},
+			"type": "LongPress"
+		},
+		"next": [
+			"新建节点24"
+		],
+		"repeat": 2,
+		"repeat_delay": 200
+	}
+}
