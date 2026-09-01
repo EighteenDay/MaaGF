@@ -1,5 +1,5 @@
 {
-    "新建节点24": {
+    "作战任务": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -15,16 +15,13 @@
             }
         },
         "action": {
-            "type": "LongPress",
-            "param": {
-                "duration": 1
-            }
+            "type": "Click"
         },
         "next": [
-            "新建节点25"
+            "向下滑动"
         ]
     },
-    "新建节点25": {
+    "向下滑动": {
         "action": {
             "type": "Swipe",
             "param": {
@@ -51,10 +48,10 @@
         "repeat_delay": 1000,
         "post_delay": 0,
         "next": [
-            "新建节点26"
+            "第零战役"
         ]
     },
-    "新建节点26": {
+    "第零战役": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -70,16 +67,13 @@
             }
         },
         "action": {
-            "type": "LongPress",
-            "param": {
-                "duration": 1
-            }
+            "type": "Click"
         },
         "next": [
-            "新建节点27"
+            "最终挑战"
         ]
     },
-    "新建节点27": {
+    "最终挑战": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -95,16 +89,13 @@
             }
         },
         "action": {
-            "type": "LongPress",
-            "param": {
-                "duration": 1
-            }
+            "type": "Click"
         },
         "next": [
-            "新建节点28"
+            "普通作战"
         ]
     },
-    "新建节点28": {
+    "普通作战": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -120,16 +111,13 @@
             }
         },
         "action": {
-            "type": "LongPress",
-            "param": {
-                "duration": 1
-            }
+            "type": "Click"
         },
         "next": [
-            "新建节点29"
+            "指挥机场"
         ]
     },
-    "新建节点29": {
+    "指挥机场": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -145,22 +133,21 @@
             }
         },
         "action": {
-            "type": "LongPress",
+            "type": "Click",
             "param": {
                 "target": [
                     572,
                     454,
                     69,
                     72
-                ],
-                "duration": 1
+                ]
             }
         },
         "next": [
-            "新建节点30"
+            "第三梯队"
         ]
     },
-    "新建节点30": {
+    "第三梯队": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -176,16 +163,13 @@
             }
         },
         "action": {
-            "type": "LongPress",
-            "param": {
-                "duration": 1
-            }
+            "type": "Click"
         },
         "next": [
-            "新建节点31"
+            "确定出击"
         ]
     },
-    "新建节点31": {
+    "确定出击": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -201,17 +185,14 @@
             }
         },
         "action": {
-            "type": "LongPress",
-            "param": {
-                "duration": 1
-            }
+            "type": "Click"
         },
         "post_delay": 2500,
         "next": [
-            "新建节点33"
+            "作战开始"
         ]
     },
-    "新建节点33": {
+    "作战开始": {
         "recognition": {
             "type": "ColorMatch",
             "param": {
@@ -239,22 +220,21 @@
         },
         "pre_delay": 500,
         "action": {
-            "type": "LongPress",
+            "type": "Click",
             "param": {
                 "target": [
                     1041,
                     704,
                     179,
                     68
-                ],
-                "duration": 1
+                ]
             }
         },
         "next": [
-            "新建节点33_副本10"
+            "左侧机场"
         ]
     },
-    "新建节点33_副本10": {
+    "左侧机场": {
         "recognition": {
             "type": "ColorMatch",
             "param": {
@@ -282,22 +262,21 @@
         },
         "pre_delay": 1500,
         "action": {
-            "type": "LongPress",
+            "type": "Click",
             "param": {
                 "target": [
                     439,
                     467,
                     52,
                     50
-                ],
-                "duration": 1
+                ]
             }
         },
         "next": [
-            "新建节点34"
+            "支援梯队1"
         ]
     },
-    "新建节点33_副本10_副本11": {
+    "右侧机场": {
         "recognition": {
             "type": "ColorMatch",
             "param": {
@@ -325,22 +304,21 @@
         },
         "pre_delay": 1000,
         "action": {
-            "type": "LongPress",
+            "type": "Click",
             "param": {
                 "target": [
                     811,
                     468,
                     60,
                     53
-                ],
-                "duration": 1
+                ]
             }
         },
         "next": [
-            "新建节点34_副本12"
+            "支援梯队2"
         ]
     },
-    "新建节点34": {
+    "支援梯队1": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -356,41 +334,13 @@
             }
         },
         "action": {
-            "type": "LongPress",
-            "param": {
-                "duration": 1
-            }
+            "type": "Click"
         },
         "next": [
-            "新建节点35"
+            "好友梯队1"
         ]
     },
-    "新建节点34_副本12": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    869,
-                    115,
-                    181,
-                    56
-                ],
-                "expected": [
-                    "梯队"
-                ]
-            }
-        },
-        "action": {
-            "type": "LongPress",
-            "param": {
-                "duration": 1
-            }
-        },
-        "next": [
-            "新建节点35_副本13"
-        ]
-    },
-    "新建节点35": {
+    "好友梯队1": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -406,53 +356,21 @@
             }
         },
         "action": {
-            "type": "LongPress",
+            "type": "Click",
             "param": {
                 "target": [
                     327,
                     207,
                     234,
                     78
-                ],
-                "duration": 1
-            }
-        },
-        "next": [
-            "新建节点36"
-        ]
-    },
-    "新建节点35_副本13": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    890,
-                    135,
-                    123,
-                    37
-                ],
-                "expected": [
-                    "作战"
                 ]
             }
         },
-        "action": {
-            "type": "LongPress",
-            "param": {
-                "target": [
-                    327,
-                    207,
-                    234,
-                    78
-                ],
-                "duration": 1
-            }
-        },
         "next": [
-            "新建节点36_副本14"
+            "梯队出击1"
         ]
     },
-    "新建节点36": {
+    "梯队出击1": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -468,71 +386,37 @@
             }
         },
         "action": {
-            "type": "LongPress",
+            "type": "Click",
             "param": {
                 "target": [
                     1088,
                     651,
                     142,
                     53
-                ],
-                "duration": 1
-            }
-        },
-        "next": [
-            "新建节点33_副本10_副本11"
-        ]
-    },
-    "新建节点36_副本14": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    960,
-                    651,
-                    92,
-                    54
-                ],
-                "expected": [
-                    "取消"
                 ]
             }
         },
-        "action": {
-            "type": "LongPress",
-            "param": {
-                "target": [
-                    1088,
-                    651,
-                    142,
-                    53
-                ],
-                "duration": 1
-            }
-        },
-        "post_delay": 500,
         "next": [
-            "新建节点38"
+            "右侧机场"
         ]
     },
-    "新建节点38": {
+    "终止作战": {
         "action": {
-            "type": "LongPress",
+            "type": "Click",
             "param": {
                 "target": [
                     279,
                     22,
                     71,
                     43
-                ],
-                "duration": 1
+                ]
             }
         },
         "next": [
-            "新建节点39"
+            "重新作战"
         ]
     },
-    "新建节点39": {
+    "重新作战": {
         "max_hit": 9,
         "recognition": {
             "type": "OCR",
@@ -550,32 +434,111 @@
         },
         "pre_delay": 500,
         "action": {
-            "type": "LongPress",
-            "param": {
-                "duration": 1
-            }
+            "type": "Click"
         },
         "next": [
-            "新建节点33"
+            "作战开始"
         ]
     },
     "进入作战": {
         "action": {
-            "type": "LongPress",
+            "type": "Click",
             "param": {
                 "target": [
                     826,
                     426,
                     207,
                     75
-                ],
-                "duration": 1
+                ]
             }
         },
         "repeat": 2,
         "repeat_delay": 200,
         "next": [
-            "新建节点24"
+            "作战任务"
+        ]
+    },
+    "支援梯队2": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    869,
+                    115,
+                    181,
+                    56
+                ],
+                "expected": [
+                    "梯队"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "好友梯队2"
+        ]
+    },
+    "好友梯队2": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    890,
+                    135,
+                    123,
+                    37
+                ],
+                "expected": [
+                    "作战"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    327,
+                    207,
+                    234,
+                    78
+                ]
+            }
+        },
+        "next": [
+            "梯队出击2"
+        ]
+    },
+    "梯队出击2": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    960,
+                    651,
+                    92,
+                    54
+                ],
+                "expected": [
+                    "取消"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1088,
+                    651,
+                    142,
+                    53
+                ]
+            }
+        },
+        "post_delay": 500,
+        "next": [
+            "终止作战"
         ]
     }
 }
