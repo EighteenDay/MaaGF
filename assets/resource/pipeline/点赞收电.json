@@ -1,252 +1,172 @@
 {
-    "切换入口": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    1158,
-                    178,
-                    14,
-                    10
-                ]
-            }
-        },
-        "post_delay": 1000
-    },
-    "参观宿舍": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    961,
-                    251,
-                    192,
-                    66
-                ],
-                "expected": [
-                    "宿舍"
-                ]
-            }
-        },
-        "pre_delay": 500,
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "next": [
-            "确认进入"
-        ]
-    },
-    "收取电池": {
-        "max_hit": 10,
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "电池.png"
-                ],
-                "green_mask": true,
-                "method": 5,
-                "threshold": [
-                    0.7
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "点击关闭"
-        ]
-    },
-    "点击入口": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    1089,
-                    204,
-                    146,
-                    45
-                ],
-                "expected": [
-                    "宿舍"
-                ]
-            }
-        },
-        "pre_delay": 500,
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "next": [
-            "点击参观"
-        ]
-    },
-    "点击关闭": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    559,
-                    531,
-                    162,
-                    60
-                ]
-            }
-        },
-        "next": [
-            "确认进入"
-        ]
-    },
-    "点击参观": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    17,
-                    711,
-                    173,
-                    73
-                ],
-                "expected": [
-                    "参观"
-                ]
-            }
-        },
-        "pre_delay": 500,
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 1000,
-        "next": [
-            "点击好友"
-        ]
-    },
-    "点击好友": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    428,
-                    160,
-                    142,
-                    67
-                ],
-                "expected": [
-                    "好友"
-                ]
-            }
-        },
-        "pre_delay": 500,
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 1000,
-        "next": [
-            "参观宿舍"
-        ]
-    },
-    "点击移动": {
-        "max_hit": 102,
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    204,
-                    712,
-                    64,
-                    64
-                ]
-            }
-        },
-        "post_delay": 2000,
-        "next": [
-            "确认进入"
-        ]
-    },
-    "点赞": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    1084,
-                    707,
-                    185,
-                    75
-                ],
-                "expected": [
-                    "点"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "确认点赞"
-        ]
-    },
-    "确认点赞": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    1087,
-                    708,
-                    182,
-                    74
-                ],
-                "expected": [
-                    "留言"
-                ]
-            }
-        },
-        "next": [
-            "确认进入"
-        ]
-    },
-    "确认进入": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "移动.png"
-                ],
-                "green_mask": true,
-                "method": 5,
-                "threshold": [
-                    0.7
-                ]
-            }
-        },
-        "next": [
-            "收取电池",
-            "点赞",
-            "点击移动",
-            "结束"
-        ]
-    },
-    "结束": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    1087,
-                    708,
-                    182,
-                    74
-                ],
-                "expected": [
-                    "留言"
-                ]
-            }
-        }
-    },
-    "进入宿舍": {
-        "next": [
-            "点击入口",
-            "[JumpBack]切换入口"
-        ]
-    }
+	"切换入口": {
+		"action": {
+			"type": "Click",
+			"param": {
+				"target": [1158, 178, 14, 10]
+			}
+		},
+		"post_delay": 1000
+	},
+	"参观宿舍": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [961, 251, 192, 66],
+				"expected": ["宿舍"]
+			}
+		},
+		"pre_delay": 500,
+		"action": {"type": "Click"},
+		"post_delay": 2000,
+		"next": [
+			"确认进入"
+		]
+	},
+	"收取电池": {
+		"max_hit": 10,
+		"recognition": {
+			"type": "TemplateMatch",
+			"param": {
+				"template": [
+					"电池.png"
+				],
+				"green_mask": true,
+				"method": 5,
+				"threshold": [0.7]
+			}
+		},
+		"action": {"type": "Click"},
+		"next": [
+			"点击关闭"
+		]
+	},
+	"点击入口": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [1089, 204, 146, 45],
+				"expected": ["宿舍"]
+			}
+		},
+		"pre_delay": 500,
+		"action": {"type": "Click"},
+		"post_delay": 2000,
+		"next": [
+			"点击参观"
+		]
+	},
+	"点击关闭": {
+		"action": {
+			"type": "Click",
+			"param": {
+				"target": [559, 531, 162, 60]
+			}
+		},
+		"next": [
+			"确认进入"
+		]
+	},
+	"点击参观": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [17, 711, 173, 73],
+				"expected": ["参观"]
+			}
+		},
+		"pre_delay": 500,
+		"action": {"type": "Click"},
+		"post_delay": 1000,
+		"next": [
+			"点击好友"
+		]
+	},
+	"点击好友": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [428, 160, 142, 67],
+				"expected": ["好友"]
+			}
+		},
+		"pre_delay": 500,
+		"action": {"type": "Click"},
+		"post_delay": 1000,
+		"next": [
+			"参观宿舍"
+		]
+	},
+	"点击移动": {
+		"max_hit": 102,
+		"action": {
+			"type": "Click",
+			"param": {
+				"target": [204, 712, 64, 64]
+			}
+		},
+		"post_delay": 2000,
+		"next": [
+			"确认进入"
+		]
+	},
+	"点赞": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [1084, 707, 185, 75],
+				"expected": ["点"]
+			}
+		},
+		"action": {"type": "Click"},
+		"next": [
+			"确认点赞"
+		]
+	},
+	"确认点赞": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [1087, 708, 182, 74],
+				"expected": ["留言"]
+			}
+		},
+		"next": [
+			"确认进入"
+		]
+	},
+	"确认进入": {
+		"recognition": {
+			"type": "TemplateMatch",
+			"param": {
+				"template": [
+					"移动.png"
+				],
+				"green_mask": true,
+				"method": 5,
+				"threshold": [0.7]
+			}
+		},
+		"next": [
+			"收取电池",
+			"点赞",
+			"点击移动",
+			"结束"
+		]
+	},
+	"结束": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [1087, 708, 182, 74],
+				"expected": ["留言"]
+			}
+		}
+	},
+	"进入宿舍": {
+		"next": [
+			"点击入口",
+			"[JumpBack]切换入口"
+		]
+	}
 }

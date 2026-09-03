@@ -1,544 +1,327 @@
 {
-    "作战任务": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    57,
-                    136,
-                    120,
-                    38
-                ],
-                "expected": [
-                    "任务"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "向下滑动"
-        ]
-    },
-    "向下滑动": {
-        "action": {
-            "type": "Swipe",
-            "param": {
-                "begin": [
-                    214,
-                    161,
-                    59,
-                    55
-                ],
-                "end": [
-                    [
-                        214,
-                        498,
-                        53,
-                        63
-                    ]
-                ],
-                "duration": [
-                    100
-                ]
-            }
-        },
-        "repeat": 2,
-        "repeat_delay": 1000,
-        "post_delay": 0,
-        "next": [
-            "第零战役"
-        ]
-    },
-    "第零战役": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    169,
-                    102,
-                    222,
-                    111
-                ],
-                "expected": [
-                    "零"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "最终挑战"
-        ]
-    },
-    "最终挑战": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    647,
-                    652,
-                    135,
-                    41
-                ],
-                "expected": [
-                    "挑战"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "普通作战"
-        ]
-    },
-    "普通作战": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    956,
-                    618,
-                    133,
-                    41
-                ],
-                "expected": [
-                    "普通"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "指挥机场"
-        ]
-    },
-    "指挥机场": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    1031,
-                    701,
-                    199,
-                    74
-                ],
-                "expected": [
-                    "开始"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    572,
-                    454,
-                    69,
-                    72
-                ]
-            }
-        },
-        "next": [
-            "第三梯队"
-        ]
-    },
-    "第三梯队": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    77,
-                    472,
-                    37,
-                    61
-                ],
-                "expected": [
-                    "3"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "确定出击"
-        ]
-    },
-    "确定出击": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    1140,
-                    652,
-                    91,
-                    49
-                ],
-                "expected": [
-                    "确定"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2500,
-        "next": [
-            "作战开始"
-        ]
-    },
-    "作战开始": {
-        "recognition": {
-            "type": "ColorMatch",
-            "param": {
-                "roi": [
-                    670,
-                    540,
-                    48,
-                    49
-                ],
-                "lower": [
-                    [
-                        253,
-                        0,
-                        0
-                    ]
-                ],
-                "upper": [
-                    [
-                        253,
-                        0,
-                        0
-                    ]
-                ]
-            }
-        },
-        "pre_delay": 500,
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    1041,
-                    704,
-                    179,
-                    68
-                ]
-            }
-        },
-        "next": [
-            "左侧机场"
-        ]
-    },
-    "左侧机场": {
-        "recognition": {
-            "type": "ColorMatch",
-            "param": {
-                "roi": [
-                    991,
-                    421,
-                    38,
-                    59
-                ],
-                "lower": [
-                    [
-                        255,
-                        204,
-                        0
-                    ]
-                ],
-                "upper": [
-                    [
-                        255,
-                        204,
-                        0
-                    ]
-                ]
-            }
-        },
-        "pre_delay": 1500,
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    439,
-                    467,
-                    52,
-                    50
-                ]
-            }
-        },
-        "next": [
-            "支援梯队1"
-        ]
-    },
-    "右侧机场": {
-        "recognition": {
-            "type": "ColorMatch",
-            "param": {
-                "roi": [
-                    991,
-                    421,
-                    38,
-                    59
-                ],
-                "lower": [
-                    [
-                        255,
-                        204,
-                        0
-                    ]
-                ],
-                "upper": [
-                    [
-                        255,
-                        204,
-                        0
-                    ]
-                ]
-            }
-        },
-        "pre_delay": 1000,
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    811,
-                    468,
-                    60,
-                    53
-                ]
-            }
-        },
-        "next": [
-            "支援梯队2"
-        ]
-    },
-    "支援梯队1": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    869,
-                    115,
-                    181,
-                    56
-                ],
-                "expected": [
-                    "梯队"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "好友梯队1"
-        ]
-    },
-    "好友梯队1": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    890,
-                    135,
-                    123,
-                    37
-                ],
-                "expected": [
-                    "作战"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    327,
-                    207,
-                    234,
-                    78
-                ]
-            }
-        },
-        "next": [
-            "梯队出击1"
-        ]
-    },
-    "梯队出击1": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    960,
-                    651,
-                    92,
-                    54
-                ],
-                "expected": [
-                    "取消"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    1088,
-                    651,
-                    142,
-                    53
-                ]
-            }
-        },
-        "next": [
-            "右侧机场"
-        ]
-    },
-    "终止作战": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    279,
-                    22,
-                    71,
-                    43
-                ]
-            }
-        },
-        "next": [
-            "重新作战"
-        ]
-    },
-    "重新作战": {
-        "max_hit": 9,
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    422,
-                    513,
-                    138,
-                    39
-                ],
-                "expected": [
-                    "重"
-                ]
-            }
-        },
-        "pre_delay": 500,
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "作战开始"
-        ]
-    },
-    "进入作战": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    826,
-                    426,
-                    207,
-                    75
-                ]
-            }
-        },
-        "repeat": 2,
-        "repeat_delay": 200,
-        "next": [
-            "作战任务"
-        ]
-    },
-    "支援梯队2": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    869,
-                    115,
-                    181,
-                    56
-                ],
-                "expected": [
-                    "梯队"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "好友梯队2"
-        ]
-    },
-    "好友梯队2": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    890,
-                    135,
-                    123,
-                    37
-                ],
-                "expected": [
-                    "作战"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    327,
-                    207,
-                    234,
-                    78
-                ]
-            }
-        },
-        "next": [
-            "梯队出击2"
-        ]
-    },
-    "梯队出击2": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    960,
-                    651,
-                    92,
-                    54
-                ],
-                "expected": [
-                    "取消"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    1088,
-                    651,
-                    142,
-                    53
-                ]
-            }
-        },
-        "post_delay": 500,
-        "next": [
-            "终止作战"
-        ]
-    }
+	"作战任务": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [57, 136, 120, 38],
+				"expected": ["任务"]
+			}
+		},
+		"action": {"type": "Click"},
+		"next": [
+			"向下滑动"
+		]
+	},
+	"向下滑动": {
+		"action": {
+			"type": "Swipe",
+			"param": {
+				"begin": [214, 161, 59, 55],
+				"end": [
+					[214, 498, 53, 63]
+				],
+				"duration": [100]
+			}
+		},
+		"repeat": 2,
+		"repeat_delay": 1000,
+		"post_delay": 0,
+		"next": [
+			"第零战役"
+		]
+	},
+	"第零战役": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [169, 102, 222, 111],
+				"expected": ["零"]
+			}
+		},
+		"action": {"type": "Click"},
+		"next": [
+			"最终挑战"
+		]
+	},
+	"最终挑战": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [647, 652, 135, 41],
+				"expected": ["挑战"]
+			}
+		},
+		"action": {"type": "Click"},
+		"next": [
+			"普通作战"
+		]
+	},
+	"普通作战": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [956, 618, 133, 41],
+				"expected": ["普通"]
+			}
+		},
+		"action": {"type": "Click"},
+		"next": [
+			"指挥机场"
+		]
+	},
+	"指挥机场": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [1031, 701, 199, 74],
+				"expected": ["开始"]
+			}
+		},
+		"action": {
+			"type": "Click",
+			"param": {
+				"target": [572, 454, 69, 72]
+			}
+		},
+		"next": [
+			"第三梯队"
+		]
+	},
+	"第三梯队": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [77, 472, 37, 61],
+				"expected": ["3"]
+			}
+		},
+		"action": {"type": "Click"},
+		"next": [
+			"确定出击"
+		]
+	},
+	"确定出击": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [1140, 652, 91, 49],
+				"expected": ["确定"]
+			}
+		},
+		"action": {"type": "Click"},
+		"post_delay": 2500,
+		"next": [
+			"作战开始"
+		]
+	},
+	"作战开始": {
+		"recognition": {
+			"type": "ColorMatch",
+			"param": {
+				"roi": [670, 540, 48, 49],
+				"lower": [
+					[253, 0, 0]
+				],
+				"upper": [
+					[253, 0, 0]
+				]
+			}
+		},
+		"pre_delay": 500,
+		"action": {
+			"type": "Click",
+			"param": {
+				"target": [1041, 704, 179, 68]
+			}
+		},
+		"next": [
+			"左侧机场"
+		]
+	},
+	"左侧机场": {
+		"recognition": {
+			"type": "ColorMatch",
+			"param": {
+				"roi": [991, 421, 38, 59],
+				"lower": [
+					[255, 204, 0]
+				],
+				"upper": [
+					[255, 204, 0]
+				]
+			}
+		},
+		"pre_delay": 1500,
+		"action": {
+			"type": "Click",
+			"param": {
+				"target": [439, 467, 52, 50]
+			}
+		},
+		"next": [
+			"支援梯队1"
+		]
+	},
+	"右侧机场": {
+		"recognition": {
+			"type": "ColorMatch",
+			"param": {
+				"roi": [991, 421, 38, 59],
+				"lower": [
+					[255, 204, 0]
+				],
+				"upper": [
+					[255, 204, 0]
+				]
+			}
+		},
+		"pre_delay": 1000,
+		"action": {
+			"type": "Click",
+			"param": {
+				"target": [811, 468, 60, 53]
+			}
+		},
+		"next": [
+			"支援梯队2"
+		]
+	},
+	"支援梯队1": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [869, 115, 181, 56],
+				"expected": ["梯队"]
+			}
+		},
+		"action": {"type": "Click"},
+		"next": [
+			"好友梯队1"
+		]
+	},
+	"好友梯队1": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [890, 135, 123, 37],
+				"expected": ["作战"]
+			}
+		},
+		"action": {
+			"type": "Click",
+			"param": {
+				"target": [327, 207, 234, 78]
+			}
+		},
+		"next": [
+			"梯队出击1"
+		]
+	},
+	"梯队出击1": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [960, 651, 92, 54],
+				"expected": ["取消"]
+			}
+		},
+		"action": {
+			"type": "Click",
+			"param": {
+				"target": [1088, 651, 142, 53]
+			}
+		},
+		"next": [
+			"右侧机场"
+		]
+	},
+	"终止作战": {
+		"action": {
+			"type": "Click",
+			"param": {
+				"target": [279, 22, 71, 43]
+			}
+		},
+		"next": [
+			"重新作战"
+		]
+	},
+	"重新作战": {
+		"max_hit": 9,
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [422, 513, 138, 39],
+				"expected": ["重"]
+			}
+		},
+		"pre_delay": 500,
+		"action": {"type": "Click"},
+		"next": [
+			"作战开始"
+		]
+	},
+	"进入作战": {
+		"action": {
+			"type": "Click",
+			"param": {
+				"target": [826, 426, 207, 75]
+			}
+		},
+		"repeat": 2,
+		"repeat_delay": 200,
+		"next": [
+			"作战任务"
+		]
+	},
+	"支援梯队2": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [869, 115, 181, 56],
+				"expected": ["梯队"]
+			}
+		},
+		"action": {"type": "Click"},
+		"next": [
+			"好友梯队2"
+		]
+	},
+	"好友梯队2": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [890, 135, 123, 37],
+				"expected": ["作战"]
+			}
+		},
+		"action": {
+			"type": "Click",
+			"param": {
+				"target": [327, 207, 234, 78]
+			}
+		},
+		"next": [
+			"梯队出击2"
+		]
+	},
+	"梯队出击2": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [960, 651, 92, 54],
+				"expected": ["取消"]
+			}
+		},
+		"action": {
+			"type": "Click",
+			"param": {
+				"target": [1088, 651, 142, 53]
+			}
+		},
+		"post_delay": 500,
+		"next": [
+			"终止作战"
+		]
+	}
 }
