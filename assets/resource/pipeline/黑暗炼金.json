@@ -1,154 +1,289 @@
 {
-    "卷积核": {
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "进入活动"
-        ],
+    "4进入战斗": {
         "recognition": {
+            "type": "OCR",
             "param": {
-                "expected": [
-                    "卷积核"
-                ],
-                "roi": [
-                    176,
-                    97,
-                    206,
-                    703
-                ]
-            },
-            "type": "OCR"
-        }
-    },
-    "向上滚动": {
-        "action": {
-            "param": {
-                "dy": 120,
-                "target": [
-                    213,
-                    441,
-                    60,
-                    48
-                ]
-            },
-            "type": "Scroll"
-        },
-        "next": [
-            "向下滚动"
-        ],
-        "repeat": 40,
-        "repeat_delay": 20
-    },
-    "向下滚动": {
-        "action": {
-            "param": {
-                "dy": -120,
-                "target": [
-                    213,
-                    441,
-                    60,
-                    48
-                ]
-            },
-            "type": "Scroll"
-        },
-        "next": [
-            "活动列表"
-        ],
-        "repeat": 28,
-        "repeat_delay": 20
-    },
-    "常驻活动": {
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "活动列表"
-        ],
-        "post_delay": 1000,
-        "recognition": {
-            "param": {
-                "expected": [
-                    "活动"
-                ],
-                "roi": [
-                    57,
-                    398,
-                    122,
-                    43
-                ]
-            },
-            "type": "OCR"
-        }
-    },
-    "活动列表": {
-        "next": [
-            "卷积核",
-            "向上滚动"
-        ],
-        "post_delay": 1000,
-        "recognition": {
-            "param": {
-                "expected": [
-                    "EP"
-                ],
-                "roi": [
-                    176,
-                    97,
-                    206,
-                    703
-                ]
-            },
-            "type": "OCR"
-        }
-    },
-    "进入战斗": {
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "常驻活动"
-        ],
-        "recognition": {
-            "param": {
-                "expected": [
-                    "战斗"
-                ],
                 "roi": [
                     907,
                     434,
                     104,
                     59
+                ],
+                "expected": [
+                    "战斗"
                 ]
-            },
-            "type": "OCR"
+            }
         },
-        "repeat": 2,
-        "repeat_delay": 200
-    },
-    "进入活动": {
         "action": {
             "type": "Click"
         },
+        "repeat": 2,
+        "repeat_delay": 200,
+        "next": [
+            "4进入活动"
+        ]
+    },
+    "4进入活动": {
         "recognition": {
+            "type": "OCR",
             "param": {
-                "expected": [
-                    "KE"
-                ],
                 "roi": [
-                    447,
-                    480,
-                    536,
-                    61
+                    441,
+                    135,
+                    97,
+                    67
+                ],
+                "expected": [
+                    "15.6"
                 ]
-            },
-            "type": "OCR"
-        }
+            }
+        },
+        "pre_delay": 1000,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1015,
+                    483,
+                    193,
+                    57
+                ]
+            }
+        },
+        "next": [
+            "4确认进入"
+        ]
     },
     "黑暗炼金": {
         "next": [
-            "进入战斗"
+            "4进入战斗"
+        ]
+    },
+    "4确认进入": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    204,
+                    731,
+                    54,
+                    40
+                ],
+                "expected": [
+                    "普通"
+                ]
+            }
+        },
+        "pre_delay": 1000,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1140,
+                    411,
+                    25,
+                    15
+                ]
+            }
+        },
+        "next": [
+            "4确认出击"
+        ]
+    },
+    "4确认出击": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1113,
+                    386,
+                    123,
+                    58
+                ],
+                "expected": [
+                    "出击"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "4选择梯队"
+        ]
+    },
+    "4选择梯队": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    996,
+                    686,
+                    270,
+                    104
+                ],
+                "expected": [
+                    "开始"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    601,
+                    458,
+                    33,
+                    32
+                ]
+            }
+        },
+        "next": [
+            "4选择重装"
+        ]
+    },
+    "4部署重装": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1060,
+                    657,
+                    167,
+                    64
+                ],
+                "expected": [
+                    "部署"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "4开始作战"
+        ]
+    },
+    "4选择重装": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    675,
+                    177,
+                    234,
+                    111
+                ],
+                "expected": [
+                    "71"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "4部署重装"
+        ]
+    },
+    "4开始作战": {
+        "recognition": {
+            "type": "ColorMatch",
+            "param": {
+                "roi": [
+                    626,
+                    441,
+                    123,
+                    82
+                ],
+                "lower": [
+                    [
+                        225,
+                        102,
+                        36
+                    ]
+                ],
+                "upper": [
+                    [
+                        225,
+                        102,
+                        36
+                    ]
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1036,
+                    699,
+                    192,
+                    76
+                ]
+            }
+        },
+        "next": [
+            "4结束回合"
+        ]
+    },
+    "4结束回合": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1098,
+                    700,
+                    165,
+                    87
+                ],
+                "expected": [
+                    "结束"
+                ]
+            }
+        },
+        "pre_delay": 1000,
+        "action": {
+            "type": "Click"
+        },
+        "repeat": 3,
+        "repeat_delay": 150,
+        "timeout": 60000,
+        "next": [
+            "4再次作战"
+        ]
+    },
+    "4再次作战": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    397,
+                    6,
+                    99,
+                    84
+                ],
+                "expected": [
+                    "02"
+                ]
+            }
+        },
+        "pre_delay": 4500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    371,
+                    651,
+                    90,
+                    26
+                ]
+            }
+        },
+        "repeat": 10,
+        "repeat_delay": 150,
+        "next": [
+            "4开始作战"
         ]
     }
 }
