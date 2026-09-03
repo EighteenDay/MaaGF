@@ -1,0 +1,154 @@
+{
+    "卷积核": {
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "进入活动"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "卷积核"
+                ],
+                "roi": [
+                    176,
+                    97,
+                    206,
+                    703
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "向上滚动": {
+        "action": {
+            "param": {
+                "dy": 120,
+                "target": [
+                    213,
+                    441,
+                    60,
+                    48
+                ]
+            },
+            "type": "Scroll"
+        },
+        "next": [
+            "向下滚动"
+        ],
+        "repeat": 40,
+        "repeat_delay": 20
+    },
+    "向下滚动": {
+        "action": {
+            "param": {
+                "dy": -120,
+                "target": [
+                    213,
+                    441,
+                    60,
+                    48
+                ]
+            },
+            "type": "Scroll"
+        },
+        "next": [
+            "活动列表"
+        ],
+        "repeat": 28,
+        "repeat_delay": 20
+    },
+    "常驻活动": {
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "活动列表"
+        ],
+        "post_delay": 1000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "活动"
+                ],
+                "roi": [
+                    57,
+                    398,
+                    122,
+                    43
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "活动列表": {
+        "next": [
+            "卷积核",
+            "向上滚动"
+        ],
+        "post_delay": 1000,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "EP"
+                ],
+                "roi": [
+                    176,
+                    97,
+                    206,
+                    703
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "进入战斗": {
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "常驻活动"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "战斗"
+                ],
+                "roi": [
+                    907,
+                    434,
+                    104,
+                    59
+                ]
+            },
+            "type": "OCR"
+        },
+        "repeat": 2,
+        "repeat_delay": 200
+    },
+    "进入活动": {
+        "action": {
+            "type": "Click"
+        },
+        "recognition": {
+            "param": {
+                "expected": [
+                    "KE"
+                ],
+                "roi": [
+                    447,
+                    480,
+                    536,
+                    61
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "黑暗炼金": {
+        "next": [
+            "进入战斗"
+        ]
+    }
+}
