@@ -1,5 +1,5 @@
 {
-	"切换入口": {
+	"1切换入口": {
 		"action": {
 			"type": "Click",
 			"param": {
@@ -8,7 +8,7 @@
 		},
 		"post_delay": 1000
 	},
-	"参观宿舍": {
+	"1参观宿舍": {
 		"recognition": {
 			"type": "OCR",
 			"param": {
@@ -20,10 +20,10 @@
 		"action": {"type": "Click"},
 		"post_delay": 2000,
 		"next": [
-			"确认进入"
+			"1确认进入"
 		]
 	},
-	"收取电池": {
+	"1收取电池": {
 		"max_hit": 10,
 		"recognition": {
 			"type": "TemplateMatch",
@@ -38,10 +38,10 @@
 		},
 		"action": {"type": "Click"},
 		"next": [
-			"点击关闭"
+			"1点击关闭"
 		]
 	},
-	"点击入口": {
+	"1点击入口": {
 		"recognition": {
 			"type": "OCR",
 			"param": {
@@ -53,10 +53,10 @@
 		"action": {"type": "Click"},
 		"post_delay": 2000,
 		"next": [
-			"点击参观"
+			"1点击参观"
 		]
 	},
-	"点击关闭": {
+	"1点击关闭": {
 		"action": {
 			"type": "Click",
 			"param": {
@@ -64,10 +64,10 @@
 			}
 		},
 		"next": [
-			"确认进入"
+			"1确认进入"
 		]
 	},
-	"点击参观": {
+	"1点击参观": {
 		"recognition": {
 			"type": "OCR",
 			"param": {
@@ -79,10 +79,10 @@
 		"action": {"type": "Click"},
 		"post_delay": 1000,
 		"next": [
-			"点击好友"
+			"1点击好友"
 		]
 	},
-	"点击好友": {
+	"1点击好友": {
 		"recognition": {
 			"type": "OCR",
 			"param": {
@@ -94,10 +94,10 @@
 		"action": {"type": "Click"},
 		"post_delay": 1000,
 		"next": [
-			"参观宿舍"
+			"1参观宿舍"
 		]
 	},
-	"点击移动": {
+	"1点击移动": {
 		"max_hit": 102,
 		"action": {
 			"type": "Click",
@@ -107,10 +107,10 @@
 		},
 		"post_delay": 2000,
 		"next": [
-			"确认进入"
+			"1确认进入"
 		]
 	},
-	"点赞": {
+	"1点赞": {
 		"recognition": {
 			"type": "OCR",
 			"param": {
@@ -120,10 +120,10 @@
 		},
 		"action": {"type": "Click"},
 		"next": [
-			"确认点赞"
+			"1确认点赞"
 		]
 	},
-	"确认点赞": {
+	"1确认点赞": {
 		"recognition": {
 			"type": "OCR",
 			"param": {
@@ -132,10 +132,10 @@
 			}
 		},
 		"next": [
-			"确认进入"
+			"1确认进入"
 		]
 	},
-	"确认进入": {
+	"1确认进入": {
 		"recognition": {
 			"type": "TemplateMatch",
 			"param": {
@@ -148,13 +148,13 @@
 			}
 		},
 		"next": [
-			"收取电池",
-			"点赞",
-			"点击移动",
-			"结束"
+			"1收取电池",
+			"1点赞",
+			"1点击移动",
+			"1结束"
 		]
 	},
-	"结束": {
+	"1结束": {
 		"recognition": {
 			"type": "OCR",
 			"param": {
@@ -163,10 +163,10 @@
 			}
 		}
 	},
-	"进入宿舍": {
+	"收电点赞": {
 		"next": [
-			"点击入口",
-			"[JumpBack]切换入口"
+			"1点击入口",
+			"[JumpBack]1切换入口"
 		]
 	}
 }

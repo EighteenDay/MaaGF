@@ -1,5 +1,5 @@
 {
-	"代理作战": {
+	"3代理作战": {
 		"recognition": {
 			"type": "OCR",
 			"param": {
@@ -10,10 +10,10 @@
 		"pre_delay": 500,
 		"action": {"type": "Click"},
 		"next": [
-			"点击确认"
+			"3点击确认"
 		]
 	},
-	"再次识别": {
+	"3再次识别": {
 		"recognition": {
 			"type": "TemplateMatch",
 			"param": {
@@ -27,10 +27,10 @@
 		"pre_delay": 1000,
 		"action": {"type": "Click"},
 		"next": [
-			"确认出击"
+			"3确认出击"
 		]
 	},
-	"地图重置": {
+	"3地图重置": {
 		"recognition": {
 			"type": "OCR",
 			"param": {
@@ -40,17 +40,17 @@
 		},
 		"action": {"type": "Click"},
 		"next": [
-			"硅状带"
+			"3硅状带"
 		]
 	},
-	"开始作战": {
+	"3开始作战": {
 		"post_delay": 3000,
 		"next": [
-			"成果结算",
-			"开始作战"
+			"3成果结算",
+			"3开始作战"
 		]
 	},
-	"开始重置": {
+	"3开始重置": {
 		"recognition": {
 			"type": "TemplateMatch",
 			"param": {
@@ -60,11 +60,11 @@
 			}
 		},
 		"next": [
-			"地图重置",
-			"收取物资"
+			"3地图重置",
+			"3收取物资"
 		]
 	},
-	"成果结算": {
+	"3成果结算": {
 		"recognition": {
 			"type": "OCR",
 			"param": {
@@ -86,17 +86,21 @@
 			"灰域探查"
 		]
 	},
-	"灰域探查": {
-		"post_delay": 8000,
+	"3收取物资": {
+		"action": {
+			"type": "Click",
+			"param": {
+				"target": [1098, 553, 129, 209]
+			}
+		},
+		"repeat": 2,
+		"repeat_delay": 200,
+		"post_delay": 1000,
 		"next": [
-			"进入灰域",
-			"识别彩蛋",
-			"再次识别",
-			"开始重置",
-			"收取物资"
+			"灰域探查"
 		]
 	},
-	"点击确认": {
+	"3点击确认": {
 		"recognition": {
 			"type": "OCR",
 			"param": {
@@ -107,10 +111,10 @@
 		"pre_delay": 500,
 		"action": {"type": "Click"},
 		"next": [
-			"开始作战"
+			"3开始作战"
 		]
 	},
-	"硅状带": {
+	"3硅状带": {
 		"recognition": {
 			"type": "OCR",
 			"param": {
@@ -120,10 +124,10 @@
 		},
 		"action": {"type": "Click"},
 		"next": [
-			"确定重置"
+			"3确定重置"
 		]
 	},
-	"确定重置": {
+	"3确定重置": {
 		"recognition": {
 			"type": "OCR",
 			"param": {
@@ -136,7 +140,7 @@
 			"灰域探查"
 		]
 	},
-	"确认出击": {
+	"3确认出击": {
 		"recognition": {
 			"type": "OCR",
 			"param": {
@@ -147,10 +151,10 @@
 		"pre_delay": 500,
 		"action": {"type": "Click"},
 		"next": [
-			"代理作战"
+			"3代理作战"
 		]
 	},
-	"识别彩蛋": {
+	"3识别彩蛋": {
 		"recognition": {
 			"type": "TemplateMatch",
 			"param": {
@@ -164,10 +168,10 @@
 		"pre_delay": 1000,
 		"action": {"type": "Click"},
 		"next": [
-			"确认出击"
+			"3确认出击"
 		]
 	},
-	"进入灰域": {
+	"3进入灰域": {
 		"recognition": {
 			"type": "OCR",
 			"param": {
@@ -182,18 +186,14 @@
 			"灰域探查"
 		]
 	},
-	"收取物资": {
-		"action": {
-			"type": "Click",
-			"param": {
-				"target": [1098, 553, 129, 209]
-			}
-		},
-		"repeat": 2,
-		"repeat_delay": 200,
-		"post_delay": 1000,
+	"灰域探查": {
+		"post_delay": 8000,
 		"next": [
-			"灰域探查"
+			"3进入灰域",
+			"3识别彩蛋",
+			"3再次识别",
+			"3开始重置",
+			"3收取物资"
 		]
 	}
 }

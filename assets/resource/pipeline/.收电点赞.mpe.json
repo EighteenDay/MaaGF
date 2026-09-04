@@ -1,0 +1,55 @@
+{
+	"file_config": {
+		"prefix": "",
+		"coordinateMode": "absolute-v1",
+		"lastSyncTime": 1788529414607,
+		"isModifiedExternally": false,
+		"isDeleted": false,
+		"separatedConfigPath": "E:\\Programs\\MaaGF\\assets\\resource\\pipeline\\.收电点赞.mpe.json",
+		"filePath": "E:\\Programs\\MaaGF\\assets\\resource\\pipeline\\收电点赞.json",
+		"savedViewport": {"x": 445, "y": -401, "zoom": 0.86},
+		"filename": "收电点赞",
+		"version": "v1.9.2"
+	},
+	"node_configs": {
+		"1切换入口": {
+			"position": {"x": 290, "y": 1282}
+		},
+		"1参观宿舍": {
+			"position": {"x": 852, "y": 902}
+		},
+		"1收取电池": {
+			"position": {"x": 1413, "y": 527}
+		},
+		"1点击入口": {
+			"position": {"x": 290, "y": 902}
+		},
+		"1点击关闭": {
+			"position": {"x": 1694, "y": 660}
+		},
+		"1点击参观": {
+			"position": {"x": 571, "y": 902}
+		},
+		"1点击好友": {
+			"position": {"x": 712, "y": 1282}
+		},
+		"1点击移动": {
+			"position": {"x": 1413, "y": 1282}
+		},
+		"1点赞": {
+			"position": {"x": 1413, "y": 1014}
+		},
+		"1确认点赞": {
+			"position": {"x": 1694, "y": 1017}
+		},
+		"1确认进入": {
+			"position": {"x": 1133, "y": 1063}
+		},
+		"1结束": {
+			"position": {"x": 1413, "y": 1622}
+		},
+		"收电点赞": {
+			"position": {"x": 10, "y": 1191}
+		}
+	}
+}

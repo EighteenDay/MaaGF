@@ -1,0 +1,79 @@
+{
+	"file_config": {
+		"prefix": "",
+		"coordinateMode": "absolute-v1",
+		"lastSyncTime": 1788528686241,
+		"isModifiedExternally": false,
+		"isDeleted": false,
+		"separatedConfigPath": "E:\\Programs\\MaaGF\\assets\\resource\\pipeline\\.好友支援.mpe.json",
+		"filePath": "E:\\Programs\\MaaGF\\assets\\resource\\pipeline\\好友支援.json",
+		"savedViewport": {"x": 111, "y": 524, "zoom": 0.35},
+		"filename": "好友支援",
+		"version": "v1.9.2"
+	},
+	"node_configs": {
+		"2作战任务": {
+			"position": {"x": 270, "y": -9}
+		},
+		"2作战开始": {
+			"position": {"x": 1534, "y": 49}
+		},
+		"2右侧机场": {
+			"position": {"x": 1814, "y": 241}
+		},
+		"2向下滑动": {
+			"position": {"x": 411, "y": 259}
+		},
+		"2好友梯队1": {
+			"position": {"x": 2376, "y": -180}
+		},
+		"2好友梯队2": {
+			"position": {"x": 2376, "y": 241}
+		},
+		"2左侧机场": {
+			"position": {"x": 1814, "y": -180}
+		},
+		"2指挥机场": {
+			"position": {"x": 972, "y": 259}
+		},
+		"2支援梯队1": {
+			"position": {"x": 2095, "y": -180}
+		},
+		"2支援梯队2": {
+			"position": {"x": 2095, "y": 241}
+		},
+		"2普通作战": {
+			"position": {"x": 832, "y": -9}
+		},
+		"2最终挑战": {
+			"position": {"x": 691, "y": 259}
+		},
+		"2梯队出击1": {
+			"position": {"x": 2657, "y": -180}
+		},
+		"2梯队出击2": {
+			"position": {"x": 2657, "y": 241}
+		},
+		"2确定出击": {
+			"position": {"x": 1253, "y": 259}
+		},
+		"2第三梯队": {
+			"position": {"x": 1112, "y": -9}
+		},
+		"2第零战役": {
+			"position": {"x": 551, "y": -9}
+		},
+		"2终止作战": {
+			"position": {"x": 2938, "y": 241}
+		},
+		"2进入作战": {
+			"position": {"x": 130, "y": 259}
+		},
+		"2重新作战": {
+			"position": {"x": 2938, "y": -180}
+		},
+		"好友支援": {
+			"position": {"x": -151, "y": 167}
+		}
+	}
+}

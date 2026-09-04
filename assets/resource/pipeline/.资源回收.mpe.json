@@ -1,0 +1,70 @@
+{
+	"file_config": {
+		"prefix": "",
+		"coordinateMode": "absolute-v1",
+		"lastSyncTime": 1788529572143,
+		"isModifiedExternally": false,
+		"isDeleted": false,
+		"separatedConfigPath": "E:\\Programs\\MaaGF\\assets\\resource\\pipeline\\.资源回收.mpe.json",
+		"filePath": "E:\\Programs\\MaaGF\\assets\\resource\\pipeline\\资源回收.json",
+		"savedViewport": {"x": 628, "y": -409, "zoom": 0.73},
+		"filename": "资源回收",
+		"version": "v1.9.2"
+	},
+	"node_configs": {
+		"4人形回收": {
+			"position": {"x": 579, "y": 1239}
+		},
+		"4仓库已满": {
+			"position": {"x": 579, "y": 951}
+		},
+		"4再次作战": {
+			"position": {"x": 290, "y": 951}
+		},
+		"4回收完成": {
+			"position": {"x": 1653, "y": 951}
+		},
+		"4开始作战": {
+			"position": {"x": 290, "y": 636}
+		},
+		"4智能选择": {
+			"position": {"x": 1046, "y": 1239}
+		},
+		"4确认出击": {
+			"position": {"x": 969, "y": 1596}
+		},
+		"4确认回收": {
+			"position": {"x": 1455, "y": 1225}
+		},
+		"4确认进入": {
+			"position": {"x": 781, "y": 1902}
+		},
+		"4确认选择": {
+			"position": {"x": 1244, "y": 951}
+		},
+		"4结束回合": {
+			"position": {"x": 290, "y": 1387}
+		},
+		"4进入战斗": {
+			"position": {"x": 290, "y": 1746}
+		},
+		"4进入活动": {
+			"position": {"x": 582, "y": 1596}
+		},
+		"4选择梯队": {
+			"position": {"x": 1159, "y": 1902}
+		},
+		"4选择角色": {
+			"position": {"x": 847, "y": 951}
+		},
+		"4选择重装": {
+			"position": {"x": 1357, "y": 1596}
+		},
+		"4部署重装": {
+			"position": {"x": 1556, "y": 1902}
+		},
+		"资源回收": {
+			"position": {"x": -94, "y": 1277}
+		}
+	}
+}

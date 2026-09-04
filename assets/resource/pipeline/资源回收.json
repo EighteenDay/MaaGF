@@ -1,19 +1,4 @@
 {
-	"4结束回合": {
-		"recognition": {
-			"type": "OCR",
-			"param": {
-				"roi": [1098, 700, 166, 86],
-				"expected": ["结束"]
-			}
-		},
-		"pre_delay": 0,
-		"action": {"type": "Click"},
-		"post_delay": 0,
-		"next": [
-			"第五后勤"
-		]
-	},
 	"4人形回收": {
 		"recognition": {
 			"type": "OCR",
@@ -42,7 +27,8 @@
 			}
 		},
 		"next": [
-			"4人形回收"
+			"4人形回收",
+			"资源回收"
 		]
 	},
 	"4再次作战": {
@@ -61,12 +47,12 @@
 			}
 		},
 		"repeat": 15,
-		"repeat_delay": 30,
+		"repeat_delay": 20,
 		"post_delay": 1000,
 		"next": [
 			"4仓库已满",
 			"4人形回收",
-			"第五后勤"
+			"资源回收"
 		]
 	},
 	"4回收完成": {
@@ -84,7 +70,22 @@
 			}
 		},
 		"next": [
-			"第五后勤"
+			"资源回收"
+		]
+	},
+	"4开始作战": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [990, 680, 283, 116],
+				"expected": ["作战"]
+			}
+		},
+		"pre_delay": 0,
+		"action": {"type": "Click"},
+		"post_delay": 0,
+		"next": [
+			"资源回收"
 		]
 	},
 	"4智能选择": {
@@ -155,6 +156,21 @@
 		"action": {"type": "Click"},
 		"next": [
 			"4确认回收"
+		]
+	},
+	"4结束回合": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [1098, 700, 166, 86],
+				"expected": ["结束"]
+			}
+		},
+		"pre_delay": 0,
+		"action": {"type": "Click"},
+		"post_delay": 0,
+		"next": [
+			"资源回收"
 		]
 	},
 	"4进入战斗": {
@@ -249,31 +265,16 @@
 		},
 		"action": {"type": "Click"},
 		"next": [
-			"第五后勤"
+			"资源回收"
 		]
 	},
-	"第五后勤": {
+	"资源回收": {
 		"next": [
 			"4开始作战",
 			"4再次作战",
 			"4结束回合",
 			"4进入战斗",
-			"第五后勤"
-		]
-	},
-	"4开始作战": {
-		"recognition": {
-			"type": "OCR",
-			"param": {
-				"roi": [990, 680, 283, 116],
-				"expected": ["开始"]
-			}
-		},
-		"pre_delay": 0,
-		"action": {"type": "Click"},
-		"post_delay": 0,
-		"next": [
-			"第五后勤"
+			"资源回收"
 		]
 	}
 }
