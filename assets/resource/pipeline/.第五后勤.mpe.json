@@ -1,0 +1,128 @@
+{
+    "file_config": {
+        "prefix": "",
+        "coordinateMode": "absolute-v1",
+        "lastSyncTime": 1788519305375,
+        "isModifiedExternally": false,
+        "isDeleted": false,
+        "filePath": "D:\\Program Files\\MaaGF\\assets\\resource\\pipeline\\第五后勤.json",
+        "separatedConfigPath": "D:\\Program Files\\MaaGF\\assets\\resource\\pipeline\\.第五后勤.mpe.json",
+        "savedViewport": {
+            "x": 107,
+            "y": -162,
+            "zoom": 0.54
+        },
+        "filename": "第五后勤",
+        "version": "v1.9.2"
+    },
+    "node_configs": {
+        "4结束回合": {
+            "position": {
+                "x": 332,
+                "y": 1429
+            }
+        },
+        "4人形回收": {
+            "position": {
+                "x": 652,
+                "y": 1272
+            }
+        },
+        "4仓库已满": {
+            "position": {
+                "x": 652,
+                "y": 968
+            }
+        },
+        "4再次作战": {
+            "position": {
+                "x": 332,
+                "y": 968
+            }
+        },
+        "4回收完成": {
+            "position": {
+                "x": 1842,
+                "y": 968
+            }
+        },
+        "4智能选择": {
+            "position": {
+                "x": 1169,
+                "y": 1272
+            }
+        },
+        "4确认出击": {
+            "position": {
+                "x": 1084,
+                "y": 1649
+            }
+        },
+        "4确认回收": {
+            "position": {
+                "x": 1622,
+                "y": 1258
+            }
+        },
+        "4确认进入": {
+            "position": {
+                "x": 875,
+                "y": 1972
+            }
+        },
+        "4确认选择": {
+            "position": {
+                "x": 1389,
+                "y": 968
+            }
+        },
+        "4进入战斗": {
+            "position": {
+                "x": 332,
+                "y": 1807
+            }
+        },
+        "4进入活动": {
+            "position": {
+                "x": 655,
+                "y": 1649
+            }
+        },
+        "4选择梯队": {
+            "position": {
+                "x": 1294,
+                "y": 1972
+            }
+        },
+        "4选择角色": {
+            "position": {
+                "x": 949,
+                "y": 968
+            }
+        },
+        "4选择重装": {
+            "position": {
+                "x": 1514,
+                "y": 1649
+            }
+        },
+        "4部署重装": {
+            "position": {
+                "x": 1734,
+                "y": 1972
+            }
+        },
+        "第五后勤": {
+            "position": {
+                "x": -94,
+                "y": 1312
+            }
+        },
+        "4开始作战": {
+            "position": {
+                "x": 332,
+                "y": 636
+            }
+        }
+    }
+}

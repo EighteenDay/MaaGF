@@ -1,0 +1,279 @@
+{
+	"4结束回合": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [1098, 700, 166, 86],
+				"expected": ["结束"]
+			}
+		},
+		"pre_delay": 0,
+		"action": {"type": "Click"},
+		"post_delay": 0,
+		"next": [
+			"第五后勤"
+		]
+	},
+	"4人形回收": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [528, 535, 226, 59],
+				"expected": ["前往"]
+			}
+		},
+		"action": {"type": "Click"},
+		"next": [
+			"4选择角色"
+		]
+	},
+	"4仓库已满": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [325, 645, 151, 38],
+				"expected": ["再次"]
+			}
+		},
+		"action": {
+			"type": "Click",
+			"param": {
+				"target": [385, 655, 31, 19]
+			}
+		},
+		"next": [
+			"4人形回收"
+		]
+	},
+	"4再次作战": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [410, 31, 77, 58],
+				"expected": ["02"]
+			}
+		},
+		"pre_delay": 3000,
+		"action": {
+			"type": "Click",
+			"param": {
+				"target": [385, 655, 31, 19]
+			}
+		},
+		"repeat": 15,
+		"repeat_delay": 30,
+		"post_delay": 1000,
+		"next": [
+			"4仓库已满",
+			"4人形回收",
+			"第五后勤"
+		]
+	},
+	"4回收完成": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [240, 161, 177, 106],
+				"expected": ["角色"]
+			}
+		},
+		"action": {
+			"type": "Click",
+			"param": {
+				"target": [88, 26, 45, 55]
+			}
+		},
+		"next": [
+			"第五后勤"
+		]
+	},
+	"4智能选择": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [1098, 624, 168, 106],
+				"expected": ["智能选择"]
+			}
+		},
+		"action": {"type": "Click"},
+		"next": [
+			"4确认选择"
+		]
+	},
+	"4确认出击": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [1113, 386, 123, 58],
+				"expected": ["出击"]
+			}
+		},
+		"action": {"type": "Click"},
+		"next": [
+			"4选择梯队"
+		]
+	},
+	"4确认回收": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [1054, 653, 165, 64],
+				"expected": ["回收"]
+			}
+		},
+		"action": {"type": "Click"},
+		"next": [
+			"4回收完成"
+		]
+	},
+	"4确认进入": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [204, 731, 54, 40],
+				"expected": ["普通"]
+			}
+		},
+		"action": {
+			"type": "Click",
+			"param": {
+				"target": [1140, 411, 25, 15]
+			}
+		},
+		"next": [
+			"4确认出击"
+		]
+	},
+	"4确认选择": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [1098, 639, 167, 90],
+				"expected": ["确定"]
+			}
+		},
+		"action": {"type": "Click"},
+		"next": [
+			"4确认回收"
+		]
+	},
+	"4进入战斗": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [907, 434, 104, 59],
+				"expected": ["战斗"]
+			}
+		},
+		"action": {"type": "Click"},
+		"repeat": 2,
+		"repeat_delay": 200,
+		"next": [
+			"4进入活动"
+		]
+	},
+	"4进入活动": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [441, 135, 97, 67],
+				"expected": ["15.6"]
+			}
+		},
+		"action": {
+			"type": "Click",
+			"param": {
+				"target": [1015, 483, 193, 57]
+			}
+		},
+		"next": [
+			"4确认进入"
+		]
+	},
+	"4选择梯队": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [996, 686, 270, 104],
+				"expected": ["开始"]
+			}
+		},
+		"action": {
+			"type": "Click",
+			"param": {
+				"target": [601, 458, 33, 32]
+			}
+		},
+		"next": [
+			"4选择重装"
+		]
+	},
+	"4选择角色": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [240, 161, 177, 106],
+				"expected": ["角色"]
+			}
+		},
+		"action": {"type": "Click"},
+		"next": [
+			"4智能选择"
+		]
+	},
+	"4选择重装": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [675, 177, 234, 111],
+				"expected": ["71"]
+			}
+		},
+		"action": {
+			"type": "Click",
+			"param": {
+				"target": [698, 212, 122, 40]
+			}
+		},
+		"next": [
+			"4部署重装"
+		]
+	},
+	"4部署重装": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [1060, 657, 167, 64],
+				"expected": ["部"]
+			}
+		},
+		"action": {"type": "Click"},
+		"next": [
+			"第五后勤"
+		]
+	},
+	"第五后勤": {
+		"next": [
+			"4开始作战",
+			"4再次作战",
+			"4结束回合",
+			"4进入战斗",
+			"第五后勤"
+		]
+	},
+	"4开始作战": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [990, 680, 283, 116],
+				"expected": ["开始"]
+			}
+		},
+		"pre_delay": 0,
+		"action": {"type": "Click"},
+		"post_delay": 0,
+		"next": [
+			"第五后勤"
+		]
+	}
+}
