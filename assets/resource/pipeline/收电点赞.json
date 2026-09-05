@@ -161,12 +161,38 @@
 				"roi": [1087, 708, 182, 74],
 				"expected": ["留言"]
 			}
-		}
+		},
+		"pre_delay": 1000,
+		"action": {
+			"type": "Click",
+			"param": {
+				"target": [59, 22, 44, 56]
+			}
+		},
+		"next": [
+			"1返回主页"
+		]
 	},
 	"收电点赞": {
 		"next": [
 			"1点击入口",
 			"[JumpBack]1切换入口"
 		]
+	},
+	"1返回主页": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [1052, 714, 208, 67],
+				"expected": ["收"]
+			}
+		},
+		"pre_delay": 1000,
+		"action": {
+			"type": "Click",
+			"param": {
+				"target": [87, 22, 47, 57]
+			}
+		}
 	}
 }

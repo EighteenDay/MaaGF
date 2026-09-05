@@ -1,70 +1,140 @@
 {
-	"file_config": {
-		"prefix": "",
-		"coordinateMode": "absolute-v1",
-		"lastSyncTime": 1788529572143,
-		"isModifiedExternally": false,
-		"isDeleted": false,
-		"separatedConfigPath": "E:\\Programs\\MaaGF\\assets\\resource\\pipeline\\.资源回收.mpe.json",
-		"filePath": "E:\\Programs\\MaaGF\\assets\\resource\\pipeline\\资源回收.json",
-		"savedViewport": {"x": 628, "y": -409, "zoom": 0.73},
-		"filename": "资源回收",
-		"version": "v1.9.2"
-	},
-	"node_configs": {
-		"4人形回收": {
-			"position": {"x": 579, "y": 1239}
-		},
-		"4仓库已满": {
-			"position": {"x": 579, "y": 951}
-		},
-		"4再次作战": {
-			"position": {"x": 290, "y": 951}
-		},
-		"4回收完成": {
-			"position": {"x": 1653, "y": 951}
-		},
-		"4开始作战": {
-			"position": {"x": 290, "y": 636}
-		},
-		"4智能选择": {
-			"position": {"x": 1046, "y": 1239}
-		},
-		"4确认出击": {
-			"position": {"x": 969, "y": 1596}
-		},
-		"4确认回收": {
-			"position": {"x": 1455, "y": 1225}
-		},
-		"4确认进入": {
-			"position": {"x": 781, "y": 1902}
-		},
-		"4确认选择": {
-			"position": {"x": 1244, "y": 951}
-		},
-		"4结束回合": {
-			"position": {"x": 290, "y": 1387}
-		},
-		"4进入战斗": {
-			"position": {"x": 290, "y": 1746}
-		},
-		"4进入活动": {
-			"position": {"x": 582, "y": 1596}
-		},
-		"4选择梯队": {
-			"position": {"x": 1159, "y": 1902}
-		},
-		"4选择角色": {
-			"position": {"x": 847, "y": 951}
-		},
-		"4选择重装": {
-			"position": {"x": 1357, "y": 1596}
-		},
-		"4部署重装": {
-			"position": {"x": 1556, "y": 1902}
-		},
-		"资源回收": {
-			"position": {"x": -94, "y": 1277}
-		}
-	}
+    "file_config": {
+        "prefix": "",
+        "coordinateMode": "absolute-v1",
+        "lastSyncTime": 1788568597768,
+        "isModifiedExternally": false,
+        "isDeleted": false,
+        "separatedConfigPath": "D:\\Program Files\\MaaGF\\assets\\resource\\pipeline\\.资源回收.mpe.json",
+        "filePath": "D:\\Program Files\\MaaGF\\assets\\resource\\pipeline\\资源回收.json",
+        "savedViewport": {
+            "x": 284,
+            "y": -166,
+            "zoom": 0.46
+        },
+        "filename": "资源回收",
+        "version": "v1.9.3"
+    },
+    "node_configs": {
+        "4人形回收": {
+            "position": {
+                "x": 608,
+                "y": 1250
+            }
+        },
+        "4仓库已满": {
+            "position": {
+                "x": 468,
+                "y": 946
+            }
+        },
+        "4再次作战": {
+            "position": {
+                "x": 187,
+                "y": 946
+            }
+        },
+        "4回收完成": {
+            "position": {
+                "x": 1310,
+                "y": 946
+            }
+        },
+        "4开始作战": {
+            "position": {
+                "x": 187,
+                "y": 566
+            }
+        },
+        "4智能选择": {
+            "position": {
+                "x": 889,
+                "y": 1250
+            }
+        },
+        "4确认出击": {
+            "position": {
+                "x": 748,
+                "y": 1891
+            }
+        },
+        "4确认回收": {
+            "position": {
+                "x": 1170,
+                "y": 1250
+            }
+        },
+        "4确认进入": {
+            "position": {
+                "x": 608,
+                "y": 2159
+            }
+        },
+        "4确认选择": {
+            "position": {
+                "x": 1029,
+                "y": 982
+            }
+        },
+        "4结束回合": {
+            "position": {
+                "x": 187,
+                "y": 1475
+            }
+        },
+        "4进入战斗": {
+            "position": {
+                "x": 187,
+                "y": 1855
+            }
+        },
+        "4进入活动": {
+            "position": {
+                "x": 468,
+                "y": 1855
+            }
+        },
+        "4选择梯队": {
+            "position": {
+                "x": 889,
+                "y": 2159
+            }
+        },
+        "4选择角色": {
+            "position": {
+                "x": 748,
+                "y": 982
+            }
+        },
+        "4选择重装": {
+            "position": {
+                "x": 1029,
+                "y": 1855
+            }
+        },
+        "4部署重装": {
+            "position": {
+                "x": 1170,
+                "y": 2159
+            }
+        },
+        "资源回收": {
+            "position": {
+                "x": -94,
+                "y": 1546
+            }
+        },
+        "4后勤出征": {
+            "position": {
+                "x": 187,
+                "y": 2235
+            }
+        },
+        "4出征确定": {
+            "position": {
+                "x": 468,
+                "y": 2465
+            }
+        }
+    }
 }
