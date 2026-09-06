@@ -55,6 +55,33 @@
 			"资源回收"
 		]
 	},
+	"4出征确定": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [662, 504, 167, 64],
+				"expected": ["确定"]
+			}
+		},
+		"action": {"type": "Click"},
+		"next": [
+			"资源回收"
+		]
+	},
+	"4后勤出征": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [1043, 714, 206, 78],
+				"expected": ["全体"]
+			}
+		},
+		"pre_delay": 1000,
+		"action": {"type": "Click"},
+		"next": [
+			"4出征确定"
+		]
+	},
 	"4回收完成": {
 		"recognition": {
 			"type": "OCR",
@@ -186,6 +213,9 @@
 		"repeat_delay": 200,
 		"next": [
 			"4进入活动"
+		],
+		"on_error": [
+			"资源回收"
 		]
 	},
 	"4进入活动": {
@@ -204,6 +234,9 @@
 		},
 		"next": [
 			"4确认进入"
+		],
+		"on_error": [
+			"资源回收"
 		]
 	},
 	"4选择梯队": {
@@ -275,33 +308,6 @@
 			"4结束回合",
 			"4进入战斗",
 			"4后勤出征",
-			"资源回收"
-		]
-	},
-	"4后勤出征": {
-		"recognition": {
-			"type": "OCR",
-			"param": {
-				"roi": [1043, 714, 206, 78],
-				"expected": ["全体"]
-			}
-		},
-		"pre_delay": 1000,
-		"action": {"type": "Click"},
-		"next": [
-			"4出征确定"
-		]
-	},
-	"4出征确定": {
-		"recognition": {
-			"type": "OCR",
-			"param": {
-				"roi": [662, 504, 167, 64],
-				"expected": ["确定"]
-			}
-		},
-		"action": {"type": "Click"},
-		"next": [
 			"资源回收"
 		]
 	}
