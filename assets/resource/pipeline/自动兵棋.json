@@ -1,0 +1,477 @@
+{
+	"兵棋循环": {
+		"next": [
+			"行动开始",
+			"选择移动",
+			"移动",
+			"攻击",
+			"投掷",
+			"结束回合",
+			"财富嗅觉",
+			"结束购买",
+			"领取奖励",
+			"游戏结束",
+			"返回循环"
+		]
+	},
+	"创建房间": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [
+					264,
+					674,
+					122,
+					71
+				],
+				"expected": [
+					"房间"
+				]
+			}
+		},
+		"action": {
+			"type": "Click"
+		},
+		"next": [
+			"可见设置"
+		]
+	},
+	"可见设置": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [
+					440,
+					510,
+					395,
+					53
+				],
+				"expected": [
+					"公开"
+				]
+			}
+		},
+		"action": {
+			"type": "Click",
+			"param": {
+				"target": [
+					828,
+					516,
+					51,
+					42
+				]
+			}
+		},
+		"next": [
+			"设置确认"
+		]
+	},
+	"开始游戏": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [
+					1045,
+					704,
+					205,
+					69
+				],
+				"expected": [
+					"开始游戏"
+				]
+			}
+		},
+		"action": {
+			"type": "Click"
+		},
+		"next": [
+			"兵棋循环"
+		]
+	},
+	"投掷": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [
+					480,
+					348,
+					321,
+					212
+				],
+				"expected": [
+					"投掷"
+				]
+			}
+		},
+		"action": {
+			"type": "Click",
+			"param": {
+				"target": [
+					581,
+					384,
+					109,
+					84
+				]
+			}
+		},
+		"next": [
+			"兵棋循环"
+		]
+	},
+	"攻击": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [
+					1049,
+					642,
+					187,
+					99
+				],
+				"expected": [
+					"攻击"
+				]
+			}
+		},
+		"action": {
+			"type": "Click"
+		},
+		"next": [
+			"兵棋循环"
+		]
+	},
+	"游戏结束": {
+		"max_hit": 10,
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [
+					117,
+					13,
+					223,
+					78
+				],
+				"expected": [
+					"游戏结束"
+				]
+			}
+		},
+		"action": {
+			"type": "Click",
+			"param": {
+				"target": [
+					6,
+					22,
+					101,
+					61
+				]
+			}
+		},
+		"post_delay": 5000,
+		"next": [
+			"开始游戏"
+		]
+	},
+	"点击咖啡": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [
+					151,
+					59,
+					582,
+					558
+				],
+				"expected": [
+					"后勤"
+				]
+			}
+		},
+		"action": {
+			"type": "Click",
+			"param": {
+				"target": [
+					33,
+					306,
+					76,
+					76
+				]
+			}
+		},
+		"next": [
+			"进入兵棋"
+		]
+	},
+	"点击左侧": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [
+					808,
+					414,
+					241,
+					99
+				],
+				"expected": [
+					"战斗"
+				]
+			}
+		},
+		"action": {
+			"type": "Click",
+			"param": {
+				"target": [
+					0,
+					362,
+					45,
+					74
+				]
+			}
+		},
+		"next": [
+			"点击咖啡"
+		]
+	},
+	"移动": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [
+					1051,
+					649,
+					185,
+					86
+				],
+				"expected": [
+					"移动"
+				]
+			}
+		},
+		"action": {
+			"type": "Click"
+		},
+		"next": [
+			"兵棋循环"
+		]
+	},
+	"结束回合": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [
+					965,
+					508,
+					279,
+					115
+				],
+				"expected": [
+					"结束回合"
+				]
+			}
+		},
+		"action": {
+			"type": "Click"
+		},
+		"next": [
+			"兵棋循环"
+		]
+	},
+	"结束购买": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [
+					1066,
+					665,
+					208,
+					116
+				],
+				"expected": [
+					"结束购买"
+				]
+			}
+		},
+		"action": {
+			"type": "Click"
+		},
+		"next": [
+			"兵棋循环"
+		]
+	},
+	"自动兵棋": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [
+					808,
+					414,
+					241,
+					99
+				],
+				"expected": [
+					"战斗"
+				]
+			}
+		},
+		"action": {
+			"type": "Click",
+			"param": {
+				"target": [
+					289,
+					250,
+					380,
+					218
+				]
+			}
+		},
+		"next": [
+			"点击左侧"
+		]
+	},
+	"行动开始": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [
+					1010,
+					441,
+					241,
+					158
+				],
+				"expected": [
+					"走"
+				]
+			}
+		},
+		"action": {
+			"type": "Click"
+		},
+		"next": [
+			"兵棋循环"
+		]
+	},
+	"设置确认": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [
+					533,
+					573,
+					206,
+					74
+				],
+				"expected": [
+					"确定"
+				]
+			}
+		},
+		"action": {
+			"type": "Click"
+		},
+		"next": [
+			"开始游戏"
+		]
+	},
+	"财富嗅觉": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [
+					650,
+					227,
+					388,
+					422
+				],
+				"expected": [
+					"财富"
+				]
+			}
+		},
+		"action": {
+			"type": "Click"
+		},
+		"next": [
+			"兵棋循环"
+		]
+	},
+	"返回循环": {
+		"post_delay": 300,
+		"next": [
+			"兵棋循环"
+		]
+	},
+	"进入兵棋": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [
+					346,
+					11,
+					204,
+					62
+				],
+				"expected": [
+					"咖啡厅"
+				]
+			}
+		},
+		"action": {
+			"type": "Click",
+			"param": {
+				"target": [
+					993,
+					552,
+					118,
+					74
+				]
+			}
+		},
+		"next": [
+			"创建房间"
+		]
+	},
+	"选择移动": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [
+					655,
+					329,
+					178,
+					176
+				],
+				"expected": [
+					"移动"
+				]
+			}
+		},
+		"action": {
+			"type": "Click"
+		},
+		"next": [
+			"兵棋循环"
+		]
+	},
+	"领取奖励": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [
+					390,
+					271,
+					508,
+					235
+				],
+				"expected": [
+					"活跃"
+				]
+			}
+		},
+		"action": {
+			"type": "Click"
+		},
+		"next": [
+			"兵棋循环"
+		]
+	}
+}
