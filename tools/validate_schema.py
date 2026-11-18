@@ -19,6 +19,14 @@ except ImportError:
 
     HAS_REFERENCING = False
 
+# 中文 Windows 控制台默认 GBK，打印 ✓/❌ 会抛 UnicodeEncodeError 直接中断校验。
+# 统一把输出流切到 UTF-8，CI（Ubuntu）与本地行为一致。
+for _stream in (sys.stdout, sys.stderr):
+    try:
+        _stream.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
+    except (AttributeError, ValueError):
+        pass
+
 
 def strip_jsonc_comments(text):
     """
