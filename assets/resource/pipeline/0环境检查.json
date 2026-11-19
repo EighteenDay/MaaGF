@@ -1,0 +1,25 @@
+{
+	"环境检查": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [1089, 204, 146, 45],
+				"expected": ["宿舍"]
+			}
+		},
+		"post_delay": 300,
+		"next": [
+			"环境检查-左上锚点"
+		]
+	},
+	"环境检查-左上锚点": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [57, 136, 120, 38],
+				"expected": ["任务"]
+			}
+		},
+		"post_delay": 300
+	}
+}

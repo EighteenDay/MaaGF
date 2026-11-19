@@ -11,7 +11,8 @@
 		"action": {"type": "Click"},
 		"next": [
 			"3点击确认"
-		]
+		],
+		"on_error": ["灰域探查"]
 	},
 	"3再次识别": {
 		"recognition": {
@@ -152,7 +153,8 @@
 		"action": {"type": "Click"},
 		"next": [
 			"3代理作战"
-		]
+		],
+		"on_error": ["灰域探查"]
 	},
 	"3识别彩蛋": {
 		"recognition": {

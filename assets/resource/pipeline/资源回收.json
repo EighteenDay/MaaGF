@@ -66,7 +66,8 @@
 		"action": {"type": "Click"},
 		"next": [
 			"资源回收"
-		]
+		],
+		"on_error": ["4回收完成"]
 	},
 	"4后勤出征": {
 		"recognition": {
@@ -80,7 +81,8 @@
 		"action": {"type": "Click"},
 		"next": [
 			"4出征确定"
-		]
+		],
+		"on_error": ["4回收完成"]
 	},
 	"4回收完成": {
 		"recognition": {
@@ -152,7 +154,8 @@
 		"action": {"type": "Click"},
 		"next": [
 			"4回收完成"
-		]
+		],
+		"on_error": ["资源回收"]
 	},
 	"4确认进入": {
 		"recognition": {

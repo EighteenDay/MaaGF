@@ -10,7 +10,8 @@
 		"action": {"type": "Click"},
 		"next": [
 			"2向下滑动"
-		]
+		],
+		"on_error": ["2返回主页"]
 	},
 	"2作战开始": {
 		"recognition": {
@@ -94,7 +95,8 @@
 		},
 		"next": [
 			"2梯队出击1"
-		]
+		],
+		"on_error": ["2返回主页"]
 	},
 	"2好友梯队2": {
 		"recognition": {
@@ -206,7 +208,8 @@
 		"action": {"type": "Click"},
 		"next": [
 			"2普通作战"
-		]
+		],
+		"on_error": ["2返回主页"]
 	},
 	"2梯队出击1": {
 		"recognition": {
