@@ -111,11 +111,6 @@ def main() -> int:
         choices=["SendMessageWithCursorPos", "SendMessage", "PostMessage"],
         help="鼠标输入方式（默认 SendMessageWithCursorPos）",
     )
-    parser.add_argument(
-        "--luna-move",
-        default="",
-        help="任务开始前给 Luna 发一条 MOVE，格式 'x,y'（需 Luna 已在运行）",
-    )
     args = parser.parse_args()
 
     LOG_DIR.mkdir(parents=True, exist_ok=True)
@@ -164,16 +159,6 @@ def main() -> int:
     print("\n锚点探测（与 0环境检查 相同参数）:")
     for label, (roi, expected) in ANCHORS.items():
         probe_ocr(tasker, image, label, roi, expected)
-
-    if args.luna_move:
-        try:
-            sys.path.insert(0, str(ROOT / "tools" / "hack" / "luna"))
-            from client import LunaClient
-
-            x, y = (int(v) for v in args.luna_move.split(","))
-            print(f"\nLuna MOVE {x} {y} -> {LunaClient().move(x, y)}")
-        except Exception as exc:
-            print(f"!! Luna MOVE 失败: {exc}")
 
     if not args.no_guard:
         run_task(tasker, "环境检查", None)
