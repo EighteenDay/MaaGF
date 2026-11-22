@@ -1,20 +1,21 @@
 {
-	"兵棋循环": {
+	"5兵棋循环": {
 		"next": [
-			"行动开始",
-			"选择移动",
-			"移动",
-			"攻击",
-			"投掷",
-			"结束回合",
-			"财富嗅觉",
-			"结束购买",
-			"领取奖励",
-			"游戏结束",
-			"返回循环"
+			"5行动开始",
+			"5选择移动",
+			"5移动",
+			"5攻击",
+			"5投掷",
+			"5结束回合",
+			"5财富嗅觉",
+			"5结束购买",
+			"5领取奖励",
+			"5奖励弹窗",
+			"5游戏结束",
+			"5返回循环"
 		]
 	},
-	"创建房间": {
+	"5创建房间": {
 		"recognition": {
 			"type": "OCR",
 			"param": {
@@ -32,12 +33,19 @@
 		"action": {
 			"type": "Click"
 		},
+		"post_delay": 500,
+		"focus": {
+			"Node.PipelineNode.Failed": "创建房间失败",
+			"Node.PipelineNode.Starting": "创建房间"
+		},
 		"next": [
-			"可见设置"
+			"5可见设置"
 		],
-		"on_error": ["兵棋循环"]
+		"on_error": [
+			"5兵棋循环"
+		]
 	},
-	"可见设置": {
+	"5可见设置": {
 		"recognition": {
 			"type": "OCR",
 			"param": {
@@ -52,6 +60,7 @@
 				]
 			}
 		},
+		"pre_delay": 300,
 		"action": {
 			"type": "Click",
 			"param": {
@@ -63,12 +72,18 @@
 				]
 			}
 		},
+		"focus": {
+			"Node.PipelineNode.Failed": "设置可见性失败",
+			"Node.PipelineNode.Starting": "设置可见性"
+		},
 		"next": [
-			"设置确认"
+			"5设置确认"
 		],
-		"on_error": ["兵棋循环"]
+		"on_error": [
+			"5兵棋循环"
+		]
 	},
-	"开始游戏": {
+	"5开始游戏": {
 		"recognition": {
 			"type": "OCR",
 			"param": {
@@ -86,12 +101,18 @@
 		"action": {
 			"type": "Click"
 		},
+		"focus": {
+			"Node.PipelineNode.Failed": "开始游戏失败",
+			"Node.PipelineNode.Starting": "开始游戏"
+		},
 		"next": [
-			"兵棋循环"
+			"5兵棋循环"
 		],
-		"on_error": ["返回循环"]
+		"on_error": [
+			"5返回循环"
+		]
 	},
-	"投掷": {
+	"5投掷": {
 		"recognition": {
 			"type": "OCR",
 			"param": {
@@ -117,11 +138,15 @@
 				]
 			}
 		},
+		"focus": {
+			"Node.PipelineNode.Failed": "投掷失败",
+			"Node.PipelineNode.Starting": "投掷"
+		},
 		"next": [
-			"兵棋循环"
+			"5兵棋循环"
 		]
 	},
-	"攻击": {
+	"5攻击": {
 		"recognition": {
 			"type": "OCR",
 			"param": {
@@ -139,24 +164,26 @@
 		"action": {
 			"type": "Click"
 		},
+		"focus": {
+			"Node.PipelineNode.Failed": "攻击失败",
+			"Node.PipelineNode.Starting": "攻击"
+		},
 		"next": [
-			"兵棋循环"
+			"5兵棋循环"
 		]
 	},
-	"游戏结束": {
-		"max_hit": 10,
+	"5游戏结束": {
+		"max_hit": 5,
 		"recognition": {
-			"type": "OCR",
+			"type": "TemplateMatch",
 			"param": {
-				"roi": [
-					117,
-					13,
-					223,
-					78
+				"template": [
+					"gameover.png"
 				],
-				"expected": [
-					"游戏结束"
-				]
+				"threshold": [
+					0.75
+				],
+				"method": 5
 			}
 		},
 		"action": {
@@ -170,12 +197,19 @@
 				]
 			}
 		},
-		"post_delay": 5000,
+		"post_delay": 1500,
+		"focus": {
+			"Node.PipelineNode.Failed": "游戏结束返回失败",
+			"Node.PipelineNode.Starting": "游戏结束返回"
+		},
 		"next": [
-			"开始游戏"
+			"5开始游戏",
+			"5进入兵棋",
+			"5创建房间",
+			"5兵棋循环"
 		]
 	},
-	"点击咖啡": {
+	"5点击咖啡": {
 		"recognition": {
 			"type": "OCR",
 			"param": {
@@ -201,11 +235,15 @@
 				]
 			}
 		},
+		"focus": {
+			"Node.PipelineNode.Failed": "进入咖啡厅失败",
+			"Node.PipelineNode.Starting": "进入咖啡厅"
+		},
 		"next": [
-			"进入兵棋"
+			"5进入兵棋"
 		]
 	},
-	"点击左侧": {
+	"5点击左侧": {
 		"recognition": {
 			"type": "OCR",
 			"param": {
@@ -231,11 +269,15 @@
 				]
 			}
 		},
+		"focus": {
+			"Node.PipelineNode.Failed": "点左侧入口失败",
+			"Node.PipelineNode.Starting": "点左侧入口"
+		},
 		"next": [
-			"点击咖啡"
+			"5点击咖啡"
 		]
 	},
-	"移动": {
+	"5移动": {
 		"recognition": {
 			"type": "OCR",
 			"param": {
@@ -253,11 +295,15 @@
 		"action": {
 			"type": "Click"
 		},
+		"focus": {
+			"Node.PipelineNode.Failed": "移动失败",
+			"Node.PipelineNode.Starting": "移动"
+		},
 		"next": [
-			"兵棋循环"
+			"5兵棋循环"
 		]
 	},
-	"结束回合": {
+	"5结束回合": {
 		"recognition": {
 			"type": "OCR",
 			"param": {
@@ -275,11 +321,15 @@
 		"action": {
 			"type": "Click"
 		},
+		"focus": {
+			"Node.PipelineNode.Failed": "结束回合失败",
+			"Node.PipelineNode.Starting": "结束回合"
+		},
 		"next": [
-			"兵棋循环"
+			"5兵棋循环"
 		]
 	},
-	"结束购买": {
+	"5结束购买": {
 		"recognition": {
 			"type": "OCR",
 			"param": {
@@ -297,8 +347,183 @@
 		"action": {
 			"type": "Click"
 		},
+		"focus": {
+			"Node.PipelineNode.Failed": "结束购买失败",
+			"Node.PipelineNode.Starting": "结束购买"
+		},
 		"next": [
-			"兵棋循环"
+			"5兵棋循环"
+		]
+	},
+	"5行动开始": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [
+					1010,
+					441,
+					241,
+					158
+				],
+				"expected": [
+					"走"
+				]
+			}
+		},
+		"action": {
+			"type": "Click"
+		},
+		"focus": {
+			"Node.PipelineNode.Failed": "行动开始失败",
+			"Node.PipelineNode.Starting": "行动开始"
+		},
+		"next": [
+			"5兵棋循环"
+		]
+	},
+	"5设置确认": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [
+					533,
+					573,
+					206,
+					74
+				],
+				"expected": [
+					"确定"
+				]
+			}
+		},
+		"action": {
+			"type": "Click"
+		},
+		"focus": {
+			"Node.PipelineNode.Failed": "设置确认失败",
+			"Node.PipelineNode.Starting": "设置确认"
+		},
+		"next": [
+			"5开始游戏"
+		]
+	},
+	"5财富嗅觉": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [
+					650,
+					227,
+					388,
+					422
+				],
+				"expected": [
+					"财富"
+				]
+			}
+		},
+		"action": {
+			"type": "Click"
+		},
+		"focus": {
+			"Node.PipelineNode.Failed": "财富嗅觉失败",
+			"Node.PipelineNode.Starting": "财富嗅觉"
+		},
+		"next": [
+			"5兵棋循环"
+		]
+	},
+	"5返回循环": {
+		"max_hit": 120,
+		"post_delay": 300,
+		"next": [
+			"5兵棋循环"
+		]
+	},
+	"5进入兵棋": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [
+					346,
+					11,
+					204,
+					62
+				],
+				"expected": [
+					"咖啡厅"
+				]
+			}
+		},
+		"action": {
+			"type": "Click",
+			"param": {
+				"target": [
+					993,
+					552,
+					118,
+					74
+				]
+			}
+		},
+		"focus": {
+			"Node.PipelineNode.Failed": "点进入兵棋失败",
+			"Node.PipelineNode.Starting": "点进入兵棋"
+		},
+		"next": [
+			"5创建房间"
+		]
+	},
+	"5选择移动": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [
+					655,
+					329,
+					178,
+					176
+				],
+				"expected": [
+					"移动"
+				]
+			}
+		},
+		"action": {
+			"type": "Click"
+		},
+		"focus": {
+			"Node.PipelineNode.Failed": "选择移动失败",
+			"Node.PipelineNode.Starting": "选择移动"
+		},
+		"next": [
+			"5兵棋循环"
+		]
+	},
+	"5领取奖励": {
+		"recognition": {
+			"type": "OCR",
+			"param": {
+				"roi": [
+					390,
+					271,
+					508,
+					235
+				],
+				"expected": [
+					"活跃"
+				]
+			}
+		},
+		"action": {
+			"type": "Click"
+		},
+		"focus": {
+			"Node.PipelineNode.Failed": "领取奖励失败",
+			"Node.PipelineNode.Starting": "领取奖励"
+		},
+		"next": [
+			"5兵棋循环"
 		]
 	},
 	"自动兵棋": {
@@ -327,154 +552,45 @@
 				]
 			}
 		},
+		"focus": {
+			"Node.PipelineNode.Failed": "进入兵棋入口失败",
+			"Node.PipelineNode.Starting": "进入兵棋入口"
+		},
 		"next": [
-			"点击左侧"
+			"5点击左侧"
 		]
 	},
-	"行动开始": {
+	"5奖励弹窗": {
 		"recognition": {
-			"type": "OCR",
+			"type": "TemplateMatch",
 			"param": {
-				"roi": [
-					1010,
-					441,
-					241,
-					158
+				"template": [
+					"reward_popup.png"
 				],
-				"expected": [
-					"走"
-				]
-			}
-		},
-		"action": {
-			"type": "Click"
-		},
-		"next": [
-			"兵棋循环"
-		]
-	},
-	"设置确认": {
-		"recognition": {
-			"type": "OCR",
-			"param": {
-				"roi": [
-					533,
-					573,
-					206,
-					74
+				"threshold": [
+					0.9
 				],
-				"expected": [
-					"确定"
-				]
-			}
-		},
-		"action": {
-			"type": "Click"
-		},
-		"next": [
-			"开始游戏"
-		]
-	},
-	"财富嗅觉": {
-		"recognition": {
-			"type": "OCR",
-			"param": {
-				"roi": [
-					650,
-					227,
-					388,
-					422
-				],
-				"expected": [
-					"财富"
-				]
-			}
-		},
-		"action": {
-			"type": "Click"
-		},
-		"next": [
-			"兵棋循环"
-		]
-	},
-	"返回循环": {
-		"post_delay": 300,
-		"next": [
-			"兵棋循环"
-		]
-	},
-	"进入兵棋": {
-		"recognition": {
-			"type": "OCR",
-			"param": {
-				"roi": [
-					346,
-					11,
-					204,
-					62
-				],
-				"expected": [
-					"咖啡厅"
-				]
+				"method": 5
 			}
 		},
 		"action": {
 			"type": "Click",
 			"param": {
 				"target": [
-					993,
-					552,
-					118,
-					74
+					560,
+					380,
+					160,
+					70
 				]
 			}
 		},
-		"next": [
-			"创建房间"
-		]
-	},
-	"选择移动": {
-		"recognition": {
-			"type": "OCR",
-			"param": {
-				"roi": [
-					655,
-					329,
-					178,
-					176
-				],
-				"expected": [
-					"移动"
-				]
-			}
-		},
-		"action": {
-			"type": "Click"
+		"post_delay": 800,
+		"focus": {
+			"Node.PipelineNode.Starting": "关闭奖励弹窗",
+			"Node.PipelineNode.Failed": "关闭奖励弹窗失败"
 		},
 		"next": [
-			"兵棋循环"
-		]
-	},
-	"领取奖励": {
-		"recognition": {
-			"type": "OCR",
-			"param": {
-				"roi": [
-					390,
-					271,
-					508,
-					235
-				],
-				"expected": [
-					"活跃"
-				]
-			}
-		},
-		"action": {
-			"type": "Click"
-		},
-		"next": [
-			"兵棋循环"
+			"5兵棋循环"
 		]
 	}
 }
