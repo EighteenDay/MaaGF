@@ -67,7 +67,6 @@
                 ]
             }
         },
-        "pre_delay": 3000,
         "action": {
             "type": "Click",
             "param": {
@@ -86,7 +85,8 @@
             "4仓库已满",
             "4人形回收",
             "资源回收"
-        ]
+        ],
+        "pre_delay": 3000
     },
     "4出征确定": {
         "recognition": {
@@ -128,7 +128,6 @@
                 ]
             }
         },
-        "pre_delay": 1000,
         "action": {
             "type": "Click"
         },
@@ -137,10 +136,10 @@
         ],
         "on_error": [
             "4回收完成"
-        ]
+        ],
+        "pre_delay": 1000
     },
     "4回收完成": {
-        "pre_delay": 1000,
         "action": {
             "type": "Click",
             "param": {
@@ -154,8 +153,14 @@
         },
         "post_delay": 500,
         "next": [
-            "资源回收"
-        ]
+            "4唤醒窗口",
+            "4返回主页"
+        ],
+        "focus": {
+            "Node.PipelineNode.Starting": "回收完成返回",
+            "Node.PipelineNode.Failed": "回收完成返回失败"
+        },
+        "pre_delay": 1000
     },
     "4开始作战": {
         "recognition": {
@@ -199,14 +204,18 @@
         "action": {
             "type": "Click"
         },
-        "post_delay": 1000,
         "next": [
             "4查找章节",
             "4滚动章节"
         ],
         "on_error": [
             "资源回收"
-        ]
+        ],
+        "post_wait_freezes": 500,
+        "focus": {
+            "Node.PipelineNode.Starting": "打开常驻活动",
+            "Node.PipelineNode.Failed": "打开常驻活动失败"
+        }
     },
     "4智能选择": {
         "recognition": {
@@ -245,13 +254,17 @@
                 ]
             }
         },
-        "pre_delay": 500,
         "action": {
             "type": "Click"
         },
         "next": [
             "4进入活动"
-        ]
+        ],
+        "pre_wait_freezes": 300,
+        "focus": {
+            "Node.PipelineNode.Starting": "查找卷积核",
+            "Node.PipelineNode.Failed": "查找卷积核失败"
+        }
     },
     "4滚动章节": {
         "action": {
@@ -276,11 +289,19 @@
                 ]
             }
         },
-        "post_delay": 1000,
         "next": [
             "4查找章节",
             "4滚动章节"
-        ]
+        ],
+        "max_hit": 12,
+        "on_error": [
+            "4返回主页"
+        ],
+        "post_wait_freezes": 400,
+        "focus": {
+            "Node.PipelineNode.Starting": "滚动章节列表",
+            "Node.PipelineNode.Failed": "滚动章节列表失败"
+        }
     },
     "4确认出击": {
         "recognition": {
@@ -302,7 +323,11 @@
         },
         "next": [
             "4选择梯队"
-        ]
+        ],
+        "focus": {
+            "Node.PipelineNode.Starting": "确认出击",
+            "Node.PipelineNode.Failed": "确认出击失败"
+        }
     },
     "4确认回收": {
         "recognition": {
@@ -344,7 +369,6 @@
                 ]
             }
         },
-        "pre_delay": 500,
         "action": {
             "type": "Swipe",
             "param": {
@@ -369,7 +393,12 @@
         },
         "next": [
             "4点击关卡"
-        ]
+        ],
+        "pre_wait_freezes": 300,
+        "focus": {
+            "Node.PipelineNode.Starting": "寻找NEW关卡",
+            "Node.PipelineNode.Failed": "寻找NEW关卡失败"
+        }
     },
     "4确认选择": {
         "recognition": {
@@ -435,14 +464,18 @@
         "action": {
             "type": "Click"
         },
-        "post_delay": 1500,
         "next": [
             "4进入活动",
             "4打开常驻活动"
         ],
         "on_error": [
             "资源回收"
-        ]
+        ],
+        "post_wait_freezes": 600,
+        "focus": {
+            "Node.PipelineNode.Starting": "进入战斗页",
+            "Node.PipelineNode.Failed": "进入战斗页失败"
+        }
     },
     "4进入活动": {
         "recognition": {
@@ -459,7 +492,6 @@
                 ]
             }
         },
-        "pre_delay": 500,
         "action": {
             "type": "Click",
             "param": {
@@ -476,7 +508,12 @@
         ],
         "next": [
             "4确认进入"
-        ]
+        ],
+        "pre_wait_freezes": 300,
+        "focus": {
+            "Node.PipelineNode.Starting": "点击进入作战",
+            "Node.PipelineNode.Failed": "点击进入作战失败"
+        }
     },
     "4选择梯队": {
         "recognition": {
@@ -506,7 +543,11 @@
         },
         "next": [
             "4选择重装"
-        ]
+        ],
+        "focus": {
+            "Node.PipelineNode.Starting": "选择梯队",
+            "Node.PipelineNode.Failed": "选择梯队失败"
+        }
     },
     "4选择角色": {
         "recognition": {
@@ -558,7 +599,11 @@
         },
         "next": [
             "4部署重装"
-        ]
+        ],
+        "focus": {
+            "Node.PipelineNode.Starting": "选择重装",
+            "Node.PipelineNode.Failed": "选择重装失败"
+        }
     },
     "4部署重装": {
         "recognition": {
@@ -571,7 +616,7 @@
                     64
                 ],
                 "expected": [
-                    "部"
+                    "部署"
                 ]
             }
         },
@@ -580,7 +625,11 @@
         },
         "next": [
             "资源回收"
-        ]
+        ],
+        "focus": {
+            "Node.PipelineNode.Starting": "部署重装",
+            "Node.PipelineNode.Failed": "部署重装失败"
+        }
     },
     "资源回收": {
         "post_delay": 500,
@@ -612,7 +661,15 @@
         "next": [
             "4确认出击",
             "4点击关卡"
-        ]
+        ],
+        "max_hit": 5,
+        "on_error": [
+            "4返回主页"
+        ],
+        "focus": {
+            "Node.PipelineNode.Starting": "点击莫比乌斯环",
+            "Node.PipelineNode.Failed": "点击莫比乌斯环失败"
+        }
     },
     "4掉落页面": {
         "recognition": {
@@ -642,7 +699,11 @@
         },
         "next": [
             "资源回收"
-        ]
+        ],
+        "focus": {
+            "Node.PipelineNode.Starting": "掉落结算",
+            "Node.PipelineNode.Failed": "掉落结算失败"
+        }
     },
     "4确认进入": {
         "recognition": {
@@ -662,7 +723,11 @@
         "next": [
             "4寻找关卡",
             "4拖动地图"
-        ]
+        ],
+        "focus": {
+            "Node.PipelineNode.Starting": "关卡地图",
+            "Node.PipelineNode.Failed": "关卡地图失败"
+        }
     },
     "4返回主页": {
         "action": {
@@ -677,8 +742,14 @@
             }
         },
         "next": [
-            "资源回收"
-        ]
+            "4唤醒窗口",
+            "4返回主页"
+        ],
+        "focus": {
+            "Node.PipelineNode.Starting": "返回主页",
+            "Node.PipelineNode.Failed": "返回主页失败"
+        },
+        "max_hit": 8
     },
     "4拖动地图": {
         "action": {
@@ -703,10 +774,10 @@
                 ]
             }
         },
-        "post_delay": 500,
         "next": [
             "4返回主页"
-        ]
+        ],
+        "post_wait_freezes": 300
     },
     "4唤醒窗口": {
         "recognition": {
@@ -736,6 +807,10 @@
         },
         "next": [
             "4进入战斗"
-        ]
+        ],
+        "focus": {
+            "Node.PipelineNode.Starting": "唤醒窗口",
+            "Node.PipelineNode.Failed": "唤醒窗口失败"
+        }
     }
 }
