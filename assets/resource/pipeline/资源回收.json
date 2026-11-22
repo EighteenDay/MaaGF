@@ -1,318 +1,741 @@
 {
-	"4人形回收": {
-		"recognition": {
-			"type": "OCR",
-			"param": {
-				"roi": [528, 535, 226, 59],
-				"expected": ["前往"]
-			}
-		},
-		"action": {"type": "Click"},
-		"next": [
-			"4选择角色"
-		]
-	},
-	"4仓库已满": {
-		"recognition": {
-			"type": "OCR",
-			"param": {
-				"roi": [325, 645, 151, 38],
-				"expected": ["再次"]
-			}
-		},
-		"action": {
-			"type": "Click",
-			"param": {
-				"target": [385, 655, 31, 19]
-			}
-		},
-		"next": [
-			"4人形回收",
-			"资源回收"
-		]
-	},
-	"4再次作战": {
-		"recognition": {
-			"type": "OCR",
-			"param": {
-				"roi": [410, 31, 77, 58],
-				"expected": ["02"]
-			}
-		},
-		"pre_delay": 3000,
-		"action": {
-			"type": "Click",
-			"param": {
-				"target": [385, 655, 31, 19]
-			}
-		},
-		"repeat": 15,
-		"repeat_delay": 20,
-		"post_delay": 1000,
-		"next": [
-			"4仓库已满",
-			"4人形回收",
-			"资源回收"
-		]
-	},
-	"4出征确定": {
-		"recognition": {
-			"type": "OCR",
-			"param": {
-				"roi": [662, 504, 167, 64],
-				"expected": ["确定"]
-			}
-		},
-		"action": {"type": "Click"},
-		"next": [
-			"资源回收"
-		],
-		"on_error": ["4回收完成"]
-	},
-	"4后勤出征": {
-		"recognition": {
-			"type": "OCR",
-			"param": {
-				"roi": [1043, 714, 206, 78],
-				"expected": ["全体"]
-			}
-		},
-		"pre_delay": 1000,
-		"action": {"type": "Click"},
-		"next": [
-			"4出征确定"
-		],
-		"on_error": ["4回收完成"]
-	},
-	"4回收完成": {
-		"recognition": {
-			"type": "OCR",
-			"param": {
-				"roi": [240, 161, 177, 106],
-				"expected": ["角色"]
-			}
-		},
-		"action": {
-			"type": "Click",
-			"param": {
-				"target": [88, 26, 45, 55]
-			}
-		},
-		"next": [
-			"资源回收"
-		]
-	},
-	"4开始作战": {
-		"recognition": {
-			"type": "OCR",
-			"param": {
-				"roi": [990, 680, 283, 116],
-				"expected": ["作战"]
-			}
-		},
-		"pre_delay": 0,
-		"action": {"type": "Click"},
-		"post_delay": 0,
-		"next": [
-			"资源回收"
-		]
-	},
-	"4智能选择": {
-		"recognition": {
-			"type": "OCR",
-			"param": {
-				"roi": [1098, 624, 168, 106],
-				"expected": ["智能选择"]
-			}
-		},
-		"action": {"type": "Click"},
-		"next": [
-			"4确认选择"
-		]
-	},
-	"4确认出击": {
-		"recognition": {
-			"type": "OCR",
-			"param": {
-				"roi": [1113, 386, 123, 58],
-				"expected": ["出击"]
-			}
-		},
-		"action": {"type": "Click"},
-		"next": [
-			"4选择梯队"
-		]
-	},
-	"4确认回收": {
-		"recognition": {
-			"type": "OCR",
-			"param": {
-				"roi": [1054, 653, 165, 64],
-				"expected": ["回收"]
-			}
-		},
-		"action": {"type": "Click"},
-		"next": [
-			"4回收完成"
-		],
-		"on_error": ["资源回收"]
-	},
-	"4确认进入": {
-		"recognition": {
-			"type": "OCR",
-			"param": {
-				"roi": [204, 731, 54, 40],
-				"expected": ["普通"]
-			}
-		},
-		"action": {
-			"type": "Click",
-			"param": {
-				"target": [1140, 411, 25, 15]
-			}
-		},
-		"next": [
-			"4确认出击"
-		]
-	},
-	"4确认选择": {
-		"recognition": {
-			"type": "OCR",
-			"param": {
-				"roi": [1098, 639, 167, 90],
-				"expected": ["确定"]
-			}
-		},
-		"action": {"type": "Click"},
-		"next": [
-			"4确认回收"
-		]
-	},
-	"4结束回合": {
-		"recognition": {
-			"type": "OCR",
-			"param": {
-				"roi": [1098, 700, 166, 86],
-				"expected": ["结束"]
-			}
-		},
-		"pre_delay": 0,
-		"action": {"type": "Click"},
-		"post_delay": 0,
-		"next": [
-			"资源回收"
-		]
-	},
-	"4进入战斗": {
-		"recognition": {
-			"type": "OCR",
-			"param": {
-				"roi": [907, 434, 104, 59],
-				"expected": ["战斗"]
-			}
-		},
-		"action": {"type": "Click"},
-		"repeat": 2,
-		"repeat_delay": 200,
-		"next": [
-			"4进入活动"
-		],
-		"on_error": [
-			"资源回收"
-		]
-	},
-	"4进入活动": {
-		"recognition": {
-			"type": "OCR",
-			"param": {
-				"roi": [441, 135, 97, 67],
-				"expected": ["15.6"]
-			}
-		},
-		"action": {
-			"type": "Click",
-			"param": {
-				"target": [1015, 483, 193, 57]
-			}
-		},
-		"next": [
-			"4确认进入"
-		],
-		"on_error": [
-			"资源回收"
-		]
-	},
-	"4选择梯队": {
-		"recognition": {
-			"type": "OCR",
-			"param": {
-				"roi": [996, 686, 270, 104],
-				"expected": ["开始"]
-			}
-		},
-		"action": {
-			"type": "Click",
-			"param": {
-				"target": [601, 458, 33, 32]
-			}
-		},
-		"next": [
-			"4选择重装"
-		]
-	},
-	"4选择角色": {
-		"recognition": {
-			"type": "OCR",
-			"param": {
-				"roi": [240, 161, 177, 106],
-				"expected": ["角色"]
-			}
-		},
-		"action": {"type": "Click"},
-		"next": [
-			"4智能选择"
-		]
-	},
-	"4选择重装": {
-		"recognition": {
-			"type": "OCR",
-			"param": {
-				"roi": [675, 177, 234, 111],
-				"expected": ["71"]
-			}
-		},
-		"action": {
-			"type": "Click",
-			"param": {
-				"target": [698, 212, 122, 40]
-			}
-		},
-		"next": [
-			"4部署重装"
-		]
-	},
-	"4部署重装": {
-		"recognition": {
-			"type": "OCR",
-			"param": {
-				"roi": [1060, 657, 167, 64],
-				"expected": ["部"]
-			}
-		},
-		"action": {"type": "Click"},
-		"next": [
-			"资源回收"
-		]
-	},
-	"资源回收": {
-		"post_delay": 500,
-		"next": [
-			"4开始作战",
-			"4再次作战",
-			"4结束回合",
-			"4进入战斗",
-			"4后勤出征",
-			"资源回收"
-		]
-	}
+    "4人形回收": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    528,
+                    535,
+                    226,
+                    59
+                ],
+                "expected": [
+                    "前往"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "4选择角色"
+        ]
+    },
+    "4仓库已满": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    325,
+                    645,
+                    151,
+                    38
+                ],
+                "expected": [
+                    "再次"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    385,
+                    655,
+                    31,
+                    19
+                ]
+            }
+        },
+        "next": [
+            "4人形回收",
+            "资源回收"
+        ]
+    },
+    "4再次作战": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    410,
+                    31,
+                    77,
+                    58
+                ],
+                "expected": [
+                    "02"
+                ]
+            }
+        },
+        "pre_delay": 3000,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    385,
+                    655,
+                    31,
+                    19
+                ]
+            }
+        },
+        "repeat": 15,
+        "repeat_delay": 20,
+        "post_delay": 1000,
+        "next": [
+            "4仓库已满",
+            "4人形回收",
+            "资源回收"
+        ]
+    },
+    "4出征确定": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    662,
+                    504,
+                    167,
+                    64
+                ],
+                "expected": [
+                    "确定"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "资源回收"
+        ],
+        "on_error": [
+            "4回收完成"
+        ]
+    },
+    "4后勤出征": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1043,
+                    714,
+                    206,
+                    78
+                ],
+                "expected": [
+                    "全体"
+                ]
+            }
+        },
+        "pre_delay": 1000,
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "4出征确定"
+        ],
+        "on_error": [
+            "4回收完成"
+        ]
+    },
+    "4回收完成": {
+        "pre_delay": 1000,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    88,
+                    26,
+                    45,
+                    55
+                ]
+            }
+        },
+        "post_delay": 500,
+        "next": [
+            "资源回收"
+        ]
+    },
+    "4开始作战": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    990,
+                    680,
+                    283,
+                    116
+                ],
+                "expected": [
+                    "作战"
+                ]
+            }
+        },
+        "pre_delay": 0,
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 0,
+        "next": [
+            "资源回收"
+        ]
+    },
+    "4打开常驻活动": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    0,
+                    335,
+                    190,
+                    115
+                ],
+                "expected": [
+                    "常驻活动"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 1000,
+        "next": [
+            "4查找章节",
+            "4滚动章节"
+        ],
+        "on_error": [
+            "资源回收"
+        ]
+    },
+    "4智能选择": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1098,
+                    624,
+                    168,
+                    106
+                ],
+                "expected": [
+                    "智能选择"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "4确认选择"
+        ]
+    },
+    "4查找章节": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    130,
+                    90,
+                    300,
+                    700
+                ],
+                "expected": [
+                    "卷积核"
+                ]
+            }
+        },
+        "pre_delay": 500,
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "4进入活动"
+        ]
+    },
+    "4滚动章节": {
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    245,
+                    600,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        245,
+                        300,
+                        1,
+                        1
+                    ]
+                ],
+                "duration": [
+                    300
+                ]
+            }
+        },
+        "post_delay": 1000,
+        "next": [
+            "4查找章节",
+            "4滚动章节"
+        ]
+    },
+    "4确认出击": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1113,
+                    386,
+                    123,
+                    58
+                ],
+                "expected": [
+                    "出击"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "4选择梯队"
+        ]
+    },
+    "4确认回收": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1054,
+                    653,
+                    165,
+                    64
+                ],
+                "expected": [
+                    "回收"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "4回收完成"
+        ],
+        "on_error": [
+            "资源回收"
+        ]
+    },
+    "4寻找关卡": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    525,
+                    267,
+                    380,
+                    239
+                ],
+                "expected": [
+                    "NEW"
+                ]
+            }
+        },
+        "pre_delay": 500,
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    1100,
+                    350,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        135,
+                        350,
+                        1,
+                        1
+                    ]
+                ],
+                "duration": [
+                    50
+                ]
+            }
+        },
+        "next": [
+            "4点击关卡"
+        ]
+    },
+    "4确认选择": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1098,
+                    639,
+                    167,
+                    90
+                ],
+                "expected": [
+                    "确定"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "4确认回收"
+        ]
+    },
+    "4结束回合": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1098,
+                    700,
+                    166,
+                    86
+                ],
+                "expected": [
+                    "结束"
+                ]
+            }
+        },
+        "pre_delay": 0,
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 0,
+        "next": [
+            "资源回收"
+        ]
+    },
+    "4进入战斗": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    890,
+                    420,
+                    137,
+                    90
+                ],
+                "expected": [
+                    "战斗"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 1500,
+        "next": [
+            "4进入活动",
+            "4打开常驻活动"
+        ],
+        "on_error": [
+            "资源回收"
+        ]
+    },
+    "4进入活动": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    468,
+                    258,
+                    260,
+                    57
+                ],
+                "expected": [
+                    "阶梯"
+                ]
+            }
+        },
+        "pre_delay": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1015,
+                    483,
+                    193,
+                    57
+                ]
+            }
+        },
+        "on_error": [
+            "资源回收"
+        ],
+        "next": [
+            "4确认进入"
+        ]
+    },
+    "4选择梯队": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    994,
+                    684,
+                    274,
+                    108
+                ],
+                "expected": [
+                    "开始作战"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    598,
+                    457,
+                    38,
+                    34
+                ]
+            }
+        },
+        "next": [
+            "4选择重装"
+        ]
+    },
+    "4选择角色": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    240,
+                    161,
+                    177,
+                    106
+                ],
+                "expected": [
+                    "角色"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "4智能选择"
+        ]
+    },
+    "4选择重装": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    675,
+                    177,
+                    234,
+                    111
+                ],
+                "expected": [
+                    "71"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    698,
+                    212,
+                    122,
+                    40
+                ]
+            }
+        },
+        "next": [
+            "4部署重装"
+        ]
+    },
+    "4部署重装": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1060,
+                    657,
+                    167,
+                    64
+                ],
+                "expected": [
+                    "部"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "资源回收"
+        ]
+    },
+    "资源回收": {
+        "post_delay": 500,
+        "next": [
+            "4开始作战",
+            "4再次作战",
+            "4结束回合",
+            "4唤醒窗口",
+            "4后勤出征",
+            "4掉落页面",
+            "资源回收"
+        ]
+    },
+    "4点击关卡": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "莫比乌斯环.png"
+                ],
+                "threshold": [
+                    0.5
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "4确认出击",
+            "4点击关卡"
+        ]
+    },
+    "4掉落页面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    856,
+                    97,
+                    248,
+                    95
+                ],
+                "expected": [
+                    "GENERAL"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    385,
+                    655,
+                    31,
+                    19
+                ]
+            }
+        },
+        "next": [
+            "资源回收"
+        ]
+    },
+    "4确认进入": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    82,
+                    708,
+                    193,
+                    86
+                ],
+                "expected": [
+                    "普通"
+                ]
+            }
+        },
+        "next": [
+            "4寻找关卡",
+            "4拖动地图"
+        ]
+    },
+    "4返回主页": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    60,
+                    28,
+                    66,
+                    58
+                ]
+            }
+        },
+        "next": [
+            "资源回收"
+        ]
+    },
+    "4拖动地图": {
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    800,
+                    350,
+                    65,
+                    65
+                ],
+                "end": [
+                    [
+                        300,
+                        350,
+                        65,
+                        65
+                    ]
+                ],
+                "duration": [
+                    50
+                ]
+            }
+        },
+        "post_delay": 500,
+        "next": [
+            "4返回主页"
+        ]
+    },
+    "4唤醒窗口": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1070,
+                    430,
+                    118,
+                    69
+                ],
+                "expected": [
+                    "编成"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    493,
+                    330,
+                    218,
+                    130
+                ]
+            }
+        },
+        "next": [
+            "4进入战斗"
+        ]
+    }
 }
