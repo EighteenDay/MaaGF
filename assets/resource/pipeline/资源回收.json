@@ -67,6 +67,7 @@
                 ]
             }
         },
+        "pre_delay": 3000,
         "action": {
             "type": "Click",
             "param": {
@@ -85,8 +86,7 @@
             "4仓库已满",
             "4人形回收",
             "资源回收"
-        ],
-        "pre_delay": 3000
+        ]
     },
     "4出征确定": {
         "recognition": {
@@ -128,6 +128,7 @@
                 ]
             }
         },
+        "pre_delay": 1000,
         "action": {
             "type": "Click"
         },
@@ -136,10 +137,58 @@
         ],
         "on_error": [
             "4回收完成"
-        ],
-        "pre_delay": 1000
+        ]
+    },
+    "4唤醒窗口": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1070,
+                    430,
+                    118,
+                    69
+                ],
+                "expected": [
+                    "编成"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    493,
+                    330,
+                    218,
+                    130
+                ]
+            }
+        },
+        "focus": {
+            "Node.PipelineNode.Failed": "唤醒窗口失败",
+            "Node.PipelineNode.Starting": "唤醒窗口"
+        },
+        "next": [
+            "4进入战斗"
+        ]
     },
     "4回收完成": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    334,
+                    169,
+                    60,
+                    59
+                ],
+                "expected": [
+                    "选择"
+                ]
+            }
+        },
+        "pre_delay": 1000,
         "action": {
             "type": "Click",
             "param": {
@@ -152,15 +201,60 @@
             }
         },
         "post_delay": 500,
+        "focus": {
+            "Node.PipelineNode.Failed": "回收完成返回失败",
+            "Node.PipelineNode.Starting": "回收完成返回"
+        },
         "next": [
             "4唤醒窗口",
             "4返回主页"
-        ],
-        "focus": {
-            "Node.PipelineNode.Starting": "回收完成返回",
-            "Node.PipelineNode.Failed": "回收完成返回失败"
+        ]
+    },
+    "4寻找关卡": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    525,
+                    267,
+                    380,
+                    239
+                ],
+                "expected": [
+                    "NEW"
+                ]
+            }
         },
-        "pre_delay": 1000
+        "pre_wait_freezes": 300,
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    1100,
+                    350,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        135,
+                        350,
+                        1,
+                        1
+                    ]
+                ],
+                "duration": [
+                    50
+                ]
+            }
+        },
+        "focus": {
+            "Node.PipelineNode.Failed": "寻找NEW关卡失败",
+            "Node.PipelineNode.Starting": "寻找NEW关卡"
+        },
+        "next": [
+            "4点击关卡"
+        ]
     },
     "4开始作战": {
         "recognition": {
@@ -204,18 +298,80 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 500,
+        "focus": {
+            "Node.PipelineNode.Failed": "打开常驻活动失败",
+            "Node.PipelineNode.Starting": "打开常驻活动"
+        },
         "next": [
             "4查找章节",
             "4滚动章节"
         ],
         "on_error": [
             "资源回收"
-        ],
-        "post_wait_freezes": 500,
+        ]
+    },
+    "4拖动地图": {
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    800,
+                    350,
+                    65,
+                    65
+                ],
+                "end": [
+                    [
+                        300,
+                        350,
+                        65,
+                        65
+                    ]
+                ],
+                "duration": [
+                    50
+                ]
+            }
+        },
+        "post_wait_freezes": 300,
+        "next": [
+            "4返回主页"
+        ]
+    },
+    "4掉落页面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    856,
+                    97,
+                    248,
+                    95
+                ],
+                "expected": [
+                    "GENERAL"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    385,
+                    655,
+                    31,
+                    19
+                ]
+            }
+        },
         "focus": {
-            "Node.PipelineNode.Starting": "打开常驻活动",
-            "Node.PipelineNode.Failed": "打开常驻活动失败"
-        }
+            "Node.PipelineNode.Failed": "掉落结算失败",
+            "Node.PipelineNode.Starting": "掉落结算"
+        },
+        "next": [
+            "资源回收"
+        ]
     },
     "4智能选择": {
         "recognition": {
@@ -254,19 +410,20 @@
                 ]
             }
         },
+        "pre_wait_freezes": 300,
         "action": {
             "type": "Click"
         },
+        "focus": {
+            "Node.PipelineNode.Failed": "查找卷积核失败",
+            "Node.PipelineNode.Starting": "查找卷积核"
+        },
         "next": [
             "4进入活动"
-        ],
-        "pre_wait_freezes": 300,
-        "focus": {
-            "Node.PipelineNode.Starting": "查找卷积核",
-            "Node.PipelineNode.Failed": "查找卷积核失败"
-        }
+        ]
     },
     "4滚动章节": {
+        "max_hit": 12,
         "action": {
             "type": "Swipe",
             "param": {
@@ -289,19 +446,46 @@
                 ]
             }
         },
+        "post_wait_freezes": 400,
+        "focus": {
+            "Node.PipelineNode.Failed": "滚动章节列表失败",
+            "Node.PipelineNode.Starting": "滚动章节列表"
+        },
         "next": [
             "4查找章节",
             "4滚动章节"
         ],
-        "max_hit": 12,
         "on_error": [
             "4返回主页"
-        ],
-        "post_wait_freezes": 400,
+        ]
+    },
+    "4点击关卡": {
+        "max_hit": 5,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "莫比乌斯环.png"
+                ],
+                "threshold": [
+                    0.5
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
         "focus": {
-            "Node.PipelineNode.Starting": "滚动章节列表",
-            "Node.PipelineNode.Failed": "滚动章节列表失败"
-        }
+            "Node.PipelineNode.Failed": "点击莫比乌斯环失败",
+            "Node.PipelineNode.Starting": "点击莫比乌斯环"
+        },
+        "next": [
+            "4确认出击",
+            "4点击关卡"
+        ],
+        "on_error": [
+            "4返回主页"
+        ]
     },
     "4确认出击": {
         "recognition": {
@@ -321,13 +505,13 @@
         "action": {
             "type": "Click"
         },
+        "focus": {
+            "Node.PipelineNode.Failed": "确认出击失败",
+            "Node.PipelineNode.Starting": "确认出击"
+        },
         "next": [
             "4选择梯队"
-        ],
-        "focus": {
-            "Node.PipelineNode.Starting": "确认出击",
-            "Node.PipelineNode.Failed": "确认出击失败"
-        }
+        ]
     },
     "4确认回收": {
         "recognition": {
@@ -347,6 +531,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 3000,
         "next": [
             "4回收完成"
         ],
@@ -354,51 +539,29 @@
             "资源回收"
         ]
     },
-    "4寻找关卡": {
+    "4确认进入": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
-                    525,
-                    267,
-                    380,
-                    239
+                    82,
+                    708,
+                    193,
+                    86
                 ],
                 "expected": [
-                    "NEW"
+                    "普通"
                 ]
             }
         },
-        "action": {
-            "type": "Swipe",
-            "param": {
-                "begin": [
-                    1100,
-                    350,
-                    1,
-                    1
-                ],
-                "end": [
-                    [
-                        135,
-                        350,
-                        1,
-                        1
-                    ]
-                ],
-                "duration": [
-                    50
-                ]
-            }
+        "focus": {
+            "Node.PipelineNode.Failed": "关卡地图失败",
+            "Node.PipelineNode.Starting": "关卡地图"
         },
         "next": [
-            "4点击关卡"
-        ],
-        "pre_wait_freezes": 300,
-        "focus": {
-            "Node.PipelineNode.Starting": "寻找NEW关卡",
-            "Node.PipelineNode.Failed": "寻找NEW关卡失败"
-        }
+            "4寻找关卡",
+            "4拖动地图"
+        ]
     },
     "4确认选择": {
         "recognition": {
@@ -446,6 +609,28 @@
             "资源回收"
         ]
     },
+    "4返回主页": {
+        "max_hit": 8,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    60,
+                    28,
+                    66,
+                    58
+                ]
+            }
+        },
+        "focus": {
+            "Node.PipelineNode.Failed": "返回主页失败",
+            "Node.PipelineNode.Starting": "返回主页"
+        },
+        "next": [
+            "4唤醒窗口",
+            "4返回主页"
+        ]
+    },
     "4进入战斗": {
         "recognition": {
             "type": "OCR",
@@ -464,18 +649,18 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 600,
+        "focus": {
+            "Node.PipelineNode.Failed": "进入战斗页失败",
+            "Node.PipelineNode.Starting": "进入战斗页"
+        },
         "next": [
             "4进入活动",
             "4打开常驻活动"
         ],
         "on_error": [
             "资源回收"
-        ],
-        "post_wait_freezes": 600,
-        "focus": {
-            "Node.PipelineNode.Starting": "进入战斗页",
-            "Node.PipelineNode.Failed": "进入战斗页失败"
-        }
+        ]
     },
     "4进入活动": {
         "recognition": {
@@ -492,6 +677,7 @@
                 ]
             }
         },
+        "pre_wait_freezes": 300,
         "action": {
             "type": "Click",
             "param": {
@@ -503,17 +689,16 @@
                 ]
             }
         },
-        "on_error": [
-            "资源回收"
-        ],
+        "focus": {
+            "Node.PipelineNode.Failed": "点击进入作战失败",
+            "Node.PipelineNode.Starting": "点击进入作战"
+        },
         "next": [
             "4确认进入"
         ],
-        "pre_wait_freezes": 300,
-        "focus": {
-            "Node.PipelineNode.Starting": "点击进入作战",
-            "Node.PipelineNode.Failed": "点击进入作战失败"
-        }
+        "on_error": [
+            "资源回收"
+        ]
     },
     "4选择梯队": {
         "recognition": {
@@ -541,23 +726,23 @@
                 ]
             }
         },
+        "focus": {
+            "Node.PipelineNode.Failed": "选择梯队失败",
+            "Node.PipelineNode.Starting": "选择梯队"
+        },
         "next": [
             "4选择重装"
-        ],
-        "focus": {
-            "Node.PipelineNode.Starting": "选择梯队",
-            "Node.PipelineNode.Failed": "选择梯队失败"
-        }
+        ]
     },
     "4选择角色": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
-                    240,
-                    161,
-                    177,
-                    106
+                    333,
+                    194,
+                    62,
+                    33
                 ],
                 "expected": [
                     "角色"
@@ -597,13 +782,13 @@
                 ]
             }
         },
+        "focus": {
+            "Node.PipelineNode.Failed": "选择重装失败",
+            "Node.PipelineNode.Starting": "选择重装"
+        },
         "next": [
             "4部署重装"
-        ],
-        "focus": {
-            "Node.PipelineNode.Starting": "选择重装",
-            "Node.PipelineNode.Failed": "选择重装失败"
-        }
+        ]
     },
     "4部署重装": {
         "recognition": {
@@ -623,13 +808,13 @@
         "action": {
             "type": "Click"
         },
+        "focus": {
+            "Node.PipelineNode.Failed": "部署重装失败",
+            "Node.PipelineNode.Starting": "部署重装"
+        },
         "next": [
             "资源回收"
-        ],
-        "focus": {
-            "Node.PipelineNode.Starting": "部署重装",
-            "Node.PipelineNode.Failed": "部署重装失败"
-        }
+        ]
     },
     "资源回收": {
         "post_delay": 500,
@@ -642,175 +827,5 @@
             "4掉落页面",
             "资源回收"
         ]
-    },
-    "4点击关卡": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "莫比乌斯环.png"
-                ],
-                "threshold": [
-                    0.5
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "4确认出击",
-            "4点击关卡"
-        ],
-        "max_hit": 5,
-        "on_error": [
-            "4返回主页"
-        ],
-        "focus": {
-            "Node.PipelineNode.Starting": "点击莫比乌斯环",
-            "Node.PipelineNode.Failed": "点击莫比乌斯环失败"
-        }
-    },
-    "4掉落页面": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    856,
-                    97,
-                    248,
-                    95
-                ],
-                "expected": [
-                    "GENERAL"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    385,
-                    655,
-                    31,
-                    19
-                ]
-            }
-        },
-        "next": [
-            "资源回收"
-        ],
-        "focus": {
-            "Node.PipelineNode.Starting": "掉落结算",
-            "Node.PipelineNode.Failed": "掉落结算失败"
-        }
-    },
-    "4确认进入": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    82,
-                    708,
-                    193,
-                    86
-                ],
-                "expected": [
-                    "普通"
-                ]
-            }
-        },
-        "next": [
-            "4寻找关卡",
-            "4拖动地图"
-        ],
-        "focus": {
-            "Node.PipelineNode.Starting": "关卡地图",
-            "Node.PipelineNode.Failed": "关卡地图失败"
-        }
-    },
-    "4返回主页": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    60,
-                    28,
-                    66,
-                    58
-                ]
-            }
-        },
-        "next": [
-            "4唤醒窗口",
-            "4返回主页"
-        ],
-        "focus": {
-            "Node.PipelineNode.Starting": "返回主页",
-            "Node.PipelineNode.Failed": "返回主页失败"
-        },
-        "max_hit": 8
-    },
-    "4拖动地图": {
-        "action": {
-            "type": "Swipe",
-            "param": {
-                "begin": [
-                    800,
-                    350,
-                    65,
-                    65
-                ],
-                "end": [
-                    [
-                        300,
-                        350,
-                        65,
-                        65
-                    ]
-                ],
-                "duration": [
-                    50
-                ]
-            }
-        },
-        "next": [
-            "4返回主页"
-        ],
-        "post_wait_freezes": 300
-    },
-    "4唤醒窗口": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    1070,
-                    430,
-                    118,
-                    69
-                ],
-                "expected": [
-                    "编成"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    493,
-                    330,
-                    218,
-                    130
-                ]
-            }
-        },
-        "next": [
-            "4进入战斗"
-        ],
-        "focus": {
-            "Node.PipelineNode.Starting": "唤醒窗口",
-            "Node.PipelineNode.Failed": "唤醒窗口失败"
-        }
     }
 }
