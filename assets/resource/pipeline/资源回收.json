@@ -338,6 +338,10 @@
             }
         },
         "post_wait_freezes": 300,
+        "focus": {
+            "Node.PipelineNode.Failed": "拖动地图失败",
+            "Node.PipelineNode.Starting": "拖动地图"
+        },
         "next": [
             "4返回主页"
         ]
@@ -426,7 +430,6 @@
         ]
     },
     "4滚动章节": {
-        "max_hit": 12,
         "action": {
             "type": "Swipe",
             "param": {
@@ -463,7 +466,6 @@
         ]
     },
     "4点击关卡": {
-        "max_hit": 5,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -613,7 +615,6 @@
         ]
     },
     "4返回主页": {
-        "max_hit": 8,
         "action": {
             "type": "Click",
             "param": {

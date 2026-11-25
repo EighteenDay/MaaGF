@@ -4,7 +4,7 @@
     "description": "少女前线自动化。",
     "license": "MIT",
     "github": "https://github.com/EighteenDay/MaaGF.git",
-    "version": "1.0.7",
+    "version": "v1.0.7",
     "controller": [
         {
             "name": "桌面端",
