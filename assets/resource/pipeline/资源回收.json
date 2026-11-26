@@ -301,7 +301,7 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": 500,
+        "post_wait_freezes": 600,
         "focus": {
             "Node.PipelineNode.Failed": "打开常驻活动失败",
             "Node.PipelineNode.Starting": "打开常驻活动"
@@ -421,6 +421,7 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": 600,
         "focus": {
             "Node.PipelineNode.Failed": "查找卷积核失败",
             "Node.PipelineNode.Starting": "查找卷积核"
@@ -448,11 +449,11 @@
                     ]
                 ],
                 "duration": [
-                    300
+                    275
                 ]
             }
         },
-        "post_wait_freezes": 400,
+        "post_wait_freezes": 600,
         "focus": {
             "Node.PipelineNode.Failed": "滚动章节列表失败",
             "Node.PipelineNode.Starting": "滚动章节列表"
@@ -693,6 +694,7 @@
                 ]
             }
         },
+        "post_wait_freezes": 600,
         "focus": {
             "Node.PipelineNode.Failed": "点击进入作战失败",
             "Node.PipelineNode.Starting": "点击进入作战"
