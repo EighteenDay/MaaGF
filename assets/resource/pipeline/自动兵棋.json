@@ -35,10 +35,6 @@
     },
     "5兵棋循环": {
         "post_delay": 300,
-        "focus": {
-            "Node.PipelineNode.Failed": "兵棋循环失败",
-            "Node.PipelineNode.Starting": "兵棋循环"
-        },
         "next": [
             "5行动开始",
             "5选择移动",
@@ -168,10 +164,6 @@
                 ]
             }
         },
-        "focus": {
-            "Node.PipelineNode.Failed": "投掷失败",
-            "Node.PipelineNode.Starting": "投掷"
-        },
         "next": [
             "5兵棋循环"
         ]
@@ -193,10 +185,6 @@
         },
         "action": {
             "type": "Click"
-        },
-        "focus": {
-            "Node.PipelineNode.Failed": "攻击失败",
-            "Node.PipelineNode.Starting": "攻击"
         },
         "next": [
             "5兵棋循环"
@@ -328,10 +316,6 @@
         "action": {
             "type": "Click"
         },
-        "focus": {
-            "Node.PipelineNode.Failed": "移动失败",
-            "Node.PipelineNode.Starting": "移动"
-        },
         "next": [
             "5兵棋循环"
         ]
@@ -353,10 +337,6 @@
         },
         "action": {
             "type": "Click"
-        },
-        "focus": {
-            "Node.PipelineNode.Failed": "结束回合失败",
-            "Node.PipelineNode.Starting": "结束回合"
         },
         "next": [
             "5兵棋循环"
@@ -380,10 +360,6 @@
         "action": {
             "type": "Click"
         },
-        "focus": {
-            "Node.PipelineNode.Failed": "结束购买失败",
-            "Node.PipelineNode.Starting": "结束购买"
-        },
         "next": [
             "5兵棋循环"
         ]
@@ -405,10 +381,6 @@
         },
         "action": {
             "type": "Click"
-        },
-        "focus": {
-            "Node.PipelineNode.Failed": "行动开始失败",
-            "Node.PipelineNode.Starting": "行动开始"
         },
         "next": [
             "5兵棋循环"
@@ -457,10 +429,6 @@
         },
         "action": {
             "type": "Click"
-        },
-        "focus": {
-            "Node.PipelineNode.Failed": "财富嗅觉失败",
-            "Node.PipelineNode.Starting": "财富嗅觉"
         },
         "next": [
             "5兵棋循环"
@@ -517,10 +485,6 @@
         },
         "action": {
             "type": "Click"
-        },
-        "focus": {
-            "Node.PipelineNode.Failed": "选择移动失败",
-            "Node.PipelineNode.Starting": "选择移动"
         },
         "next": [
             "5兵棋循环"
