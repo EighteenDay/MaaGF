@@ -90,10 +90,6 @@
         "repeat": 15,
         "repeat_delay": 20,
         "post_delay": 1000,
-        "focus": {
-            "Node.PipelineNode.Failed": "再次作战失败",
-            "Node.PipelineNode.Starting": "再次作战"
-        },
         "next": [
             "4仓库已满",
             "4人形回收",
@@ -299,10 +295,6 @@
             "type": "Click"
         },
         "post_delay": 0,
-        "focus": {
-            "Node.PipelineNode.Failed": "开始作战失败",
-            "Node.PipelineNode.Starting": "开始作战"
-        },
         "next": [
             "资源回收"
         ]
@@ -647,10 +639,6 @@
             "type": "Click"
         },
         "post_delay": 0,
-        "focus": {
-            "Node.PipelineNode.Failed": "结束回合失败",
-            "Node.PipelineNode.Starting": "结束回合"
-        },
         "next": [
             "资源回收"
         ]
@@ -868,10 +856,6 @@
     },
     "资源回收": {
         "post_delay": 500,
-        "focus": {
-            "Node.PipelineNode.Failed": "资源回收失败",
-            "Node.PipelineNode.Starting": "资源回收"
-        },
         "next": [
             "4开始作战",
             "4再次作战",
