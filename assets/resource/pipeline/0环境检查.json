@@ -8,6 +8,10 @@
 			}
 		},
 		"post_delay": 300,
+		"focus": {
+			"Node.PipelineNode.Failed": "环境检查失败",
+			"Node.PipelineNode.Starting": "环境检查"
+		},
 		"next": [
 			"环境检查-右侧锚点"
 		]
@@ -20,6 +24,10 @@
 				"expected": ["编成"]
 			}
 		},
-		"post_delay": 300
+		"post_delay": 300,
+		"focus": {
+			"Node.PipelineNode.Failed": "环境检查-右侧锚点失败",
+			"Node.PipelineNode.Starting": "环境检查-右侧锚点"
+		}
 	}
 }

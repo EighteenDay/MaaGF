@@ -17,6 +17,10 @@
         "action": {
             "type": "Click"
         },
+        "focus": {
+            "Node.PipelineNode.Failed": "作战任务失败",
+            "Node.PipelineNode.Starting": "作战任务"
+        },
         "next": [
             "2向下滑动"
         ],
@@ -61,6 +65,10 @@
                     68
                 ]
             }
+        },
+        "focus": {
+            "Node.PipelineNode.Failed": "作战开始失败",
+            "Node.PipelineNode.Starting": "作战开始"
         },
         "next": [
             "2左侧机场"
@@ -107,6 +115,10 @@
                 ]
             }
         },
+        "focus": {
+            "Node.PipelineNode.Failed": "右侧机场失败",
+            "Node.PipelineNode.Starting": "右侧机场"
+        },
         "next": [
             "2支援梯队2"
         ],
@@ -141,6 +153,10 @@
         "repeat_delay": 1000,
         "post_delay": 0,
         "post_wait_freezes": 500,
+        "focus": {
+            "Node.PipelineNode.Failed": "向下滑动失败",
+            "Node.PipelineNode.Starting": "向下滑动"
+        },
         "next": [
             "2第零战役"
         ],
@@ -174,6 +190,10 @@
                 ]
             }
         },
+        "focus": {
+            "Node.PipelineNode.Failed": "好友梯队1失败",
+            "Node.PipelineNode.Starting": "好友梯队1"
+        },
         "next": [
             "2梯队出击1"
         ],
@@ -206,6 +226,10 @@
                     78
                 ]
             }
+        },
+        "focus": {
+            "Node.PipelineNode.Failed": "好友梯队2失败",
+            "Node.PipelineNode.Starting": "好友梯队2"
         },
         "next": [
             "2梯队出击2"
@@ -252,6 +276,10 @@
                 ]
             }
         },
+        "focus": {
+            "Node.PipelineNode.Failed": "左侧机场失败",
+            "Node.PipelineNode.Starting": "左侧机场"
+        },
         "next": [
             "2支援梯队1"
         ],
@@ -285,6 +313,10 @@
                 ]
             }
         },
+        "focus": {
+            "Node.PipelineNode.Failed": "指挥机场失败",
+            "Node.PipelineNode.Starting": "指挥机场"
+        },
         "next": [
             "2第三梯队"
         ],
@@ -309,6 +341,10 @@
         },
         "action": {
             "type": "Click"
+        },
+        "focus": {
+            "Node.PipelineNode.Failed": "支援梯队1失败",
+            "Node.PipelineNode.Starting": "支援梯队1"
         },
         "next": [
             "2好友梯队1"
@@ -335,6 +371,10 @@
         "action": {
             "type": "Click"
         },
+        "focus": {
+            "Node.PipelineNode.Failed": "支援梯队2失败",
+            "Node.PipelineNode.Starting": "支援梯队2"
+        },
         "next": [
             "2好友梯队2"
         ],
@@ -360,6 +400,10 @@
         "action": {
             "type": "Click"
         },
+        "focus": {
+            "Node.PipelineNode.Failed": "普通作战失败",
+            "Node.PipelineNode.Starting": "普通作战"
+        },
         "next": [
             "2指挥机场"
         ],
@@ -384,6 +428,10 @@
         },
         "action": {
             "type": "Click"
+        },
+        "focus": {
+            "Node.PipelineNode.Failed": "最终挑战失败",
+            "Node.PipelineNode.Starting": "最终挑战"
         },
         "next": [
             "2普通作战"
@@ -417,6 +465,10 @@
                     53
                 ]
             }
+        },
+        "focus": {
+            "Node.PipelineNode.Failed": "梯队出击1失败",
+            "Node.PipelineNode.Starting": "梯队出击1"
         },
         "next": [
             "2右侧机场"
@@ -452,6 +504,10 @@
             }
         },
         "post_delay": 500,
+        "focus": {
+            "Node.PipelineNode.Failed": "梯队出击2失败",
+            "Node.PipelineNode.Starting": "梯队出击2"
+        },
         "next": [
             "2终止作战"
         ],
@@ -478,6 +534,10 @@
             "type": "Click"
         },
         "post_delay": 2500,
+        "focus": {
+            "Node.PipelineNode.Failed": "确定出击失败",
+            "Node.PipelineNode.Starting": "确定出击"
+        },
         "next": [
             "2作战开始"
         ]
@@ -499,6 +559,10 @@
         },
         "action": {
             "type": "Click"
+        },
+        "focus": {
+            "Node.PipelineNode.Failed": "第三梯队失败",
+            "Node.PipelineNode.Starting": "第三梯队"
         },
         "next": [
             "2确定出击"
@@ -525,6 +589,10 @@
         "action": {
             "type": "Click"
         },
+        "focus": {
+            "Node.PipelineNode.Failed": "第零战役失败",
+            "Node.PipelineNode.Starting": "第零战役"
+        },
         "next": [
             "2最终挑战"
         ],
@@ -543,6 +611,10 @@
                     43
                 ]
             }
+        },
+        "focus": {
+            "Node.PipelineNode.Failed": "终止作战失败",
+            "Node.PipelineNode.Starting": "终止作战"
         },
         "next": [
             "2重新作战",
@@ -569,6 +641,10 @@
         },
         "action": {
             "type": "Click"
+        },
+        "focus": {
+            "Node.PipelineNode.Failed": "结束作战失败",
+            "Node.PipelineNode.Starting": "结束作战"
         },
         "next": [
             "2返回主页"
@@ -603,6 +679,10 @@
             }
         },
         "post_delay": 3000,
+        "focus": {
+            "Node.PipelineNode.Failed": "返回主页失败",
+            "Node.PipelineNode.Starting": "返回主页"
+        },
         "next": [
             "2收尾等待"
         ]
@@ -626,6 +706,10 @@
         },
         "repeat": 2,
         "repeat_delay": 200,
+        "focus": {
+            "Node.PipelineNode.Failed": "进入作战失败",
+            "Node.PipelineNode.Starting": "进入作战"
+        },
         "next": [
             "2作战任务"
         ],
@@ -653,6 +737,10 @@
         "action": {
             "type": "Click"
         },
+        "focus": {
+            "Node.PipelineNode.Failed": "重新作战失败",
+            "Node.PipelineNode.Starting": "重新作战"
+        },
         "next": [
             "2作战开始"
         ],
@@ -671,6 +759,10 @@
             }
         },
         "post_delay": 500,
+        "focus": {
+            "Node.PipelineNode.Failed": "中央点击失败",
+            "Node.PipelineNode.Starting": "中央点击"
+        },
         "next": [
             "2进入作战"
         ],
@@ -679,6 +771,10 @@
         ]
     },
     "好友支援": {
+        "focus": {
+            "Node.PipelineNode.Failed": "好友支援失败",
+            "Node.PipelineNode.Starting": "好友支援"
+        },
         "next": [
             "2中央点击"
         ]

@@ -35,6 +35,10 @@
     },
     "5兵棋循环": {
         "post_delay": 300,
+        "focus": {
+            "Node.PipelineNode.Failed": "兵棋循环失败",
+            "Node.PipelineNode.Starting": "兵棋循环"
+        },
         "next": [
             "5行动开始",
             "5选择移动",

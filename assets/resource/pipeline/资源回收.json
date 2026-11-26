@@ -17,6 +17,10 @@
         "action": {
             "type": "Click"
         },
+        "focus": {
+            "Node.PipelineNode.Failed": "人形回收失败",
+            "Node.PipelineNode.Starting": "人形回收"
+        },
         "next": [
             "4选择角色"
         ]
@@ -46,6 +50,10 @@
                     19
                 ]
             }
+        },
+        "focus": {
+            "Node.PipelineNode.Failed": "仓库已满失败",
+            "Node.PipelineNode.Starting": "仓库已满"
         },
         "next": [
             "4人形回收",
@@ -82,6 +90,10 @@
         "repeat": 15,
         "repeat_delay": 20,
         "post_delay": 1000,
+        "focus": {
+            "Node.PipelineNode.Failed": "再次作战失败",
+            "Node.PipelineNode.Starting": "再次作战"
+        },
         "next": [
             "4仓库已满",
             "4人形回收",
@@ -105,6 +117,10 @@
         },
         "action": {
             "type": "Click"
+        },
+        "focus": {
+            "Node.PipelineNode.Failed": "出征确定失败",
+            "Node.PipelineNode.Starting": "出征确定"
         },
         "next": [
             "资源回收"
@@ -131,6 +147,10 @@
         "pre_delay": 1000,
         "action": {
             "type": "Click"
+        },
+        "focus": {
+            "Node.PipelineNode.Failed": "后勤出征失败",
+            "Node.PipelineNode.Starting": "后勤出征"
         },
         "next": [
             "4出征确定"
@@ -279,6 +299,10 @@
             "type": "Click"
         },
         "post_delay": 0,
+        "focus": {
+            "Node.PipelineNode.Failed": "开始作战失败",
+            "Node.PipelineNode.Starting": "开始作战"
+        },
         "next": [
             "资源回收"
         ]
@@ -397,6 +421,10 @@
         },
         "action": {
             "type": "Click"
+        },
+        "focus": {
+            "Node.PipelineNode.Failed": "智能选择失败",
+            "Node.PipelineNode.Starting": "智能选择"
         },
         "next": [
             "4确认选择"
@@ -538,6 +566,10 @@
             "type": "Click"
         },
         "post_delay": 3000,
+        "focus": {
+            "Node.PipelineNode.Failed": "确认回收失败",
+            "Node.PipelineNode.Starting": "确认回收"
+        },
         "next": [
             "4回收完成"
         ],
@@ -587,6 +619,10 @@
         "action": {
             "type": "Click"
         },
+        "focus": {
+            "Node.PipelineNode.Failed": "确认选择失败",
+            "Node.PipelineNode.Starting": "确认选择"
+        },
         "next": [
             "4确认回收"
         ]
@@ -611,6 +647,10 @@
             "type": "Click"
         },
         "post_delay": 0,
+        "focus": {
+            "Node.PipelineNode.Failed": "结束回合失败",
+            "Node.PipelineNode.Starting": "结束回合"
+        },
         "next": [
             "资源回收"
         ]
@@ -758,6 +798,10 @@
         "action": {
             "type": "Click"
         },
+        "focus": {
+            "Node.PipelineNode.Failed": "选择角色失败",
+            "Node.PipelineNode.Starting": "选择角色"
+        },
         "next": [
             "4智能选择"
         ]
@@ -824,6 +868,10 @@
     },
     "资源回收": {
         "post_delay": 500,
+        "focus": {
+            "Node.PipelineNode.Failed": "资源回收失败",
+            "Node.PipelineNode.Starting": "资源回收"
+        },
         "next": [
             "4开始作战",
             "4再次作战",
