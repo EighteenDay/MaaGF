@@ -66,10 +66,6 @@
                 ]
             }
         },
-        "focus": {
-            "Node.PipelineNode.Failed": "作战开始失败",
-            "Node.PipelineNode.Starting": "作战开始"
-        },
         "next": [
             "2左侧机场"
         ],
@@ -114,10 +110,6 @@
                     53
                 ]
             }
-        },
-        "focus": {
-            "Node.PipelineNode.Failed": "右侧机场失败",
-            "Node.PipelineNode.Starting": "右侧机场"
         },
         "next": [
             "2支援梯队2"
@@ -190,10 +182,6 @@
                 ]
             }
         },
-        "focus": {
-            "Node.PipelineNode.Failed": "好友梯队1失败",
-            "Node.PipelineNode.Starting": "好友梯队1"
-        },
         "next": [
             "2梯队出击1"
         ],
@@ -226,10 +214,6 @@
                     78
                 ]
             }
-        },
-        "focus": {
-            "Node.PipelineNode.Failed": "好友梯队2失败",
-            "Node.PipelineNode.Starting": "好友梯队2"
         },
         "next": [
             "2梯队出击2"
@@ -275,10 +259,6 @@
                     50
                 ]
             }
-        },
-        "focus": {
-            "Node.PipelineNode.Failed": "左侧机场失败",
-            "Node.PipelineNode.Starting": "左侧机场"
         },
         "next": [
             "2支援梯队1"
@@ -342,10 +322,6 @@
         "action": {
             "type": "Click"
         },
-        "focus": {
-            "Node.PipelineNode.Failed": "支援梯队1失败",
-            "Node.PipelineNode.Starting": "支援梯队1"
-        },
         "next": [
             "2好友梯队1"
         ],
@@ -370,10 +346,6 @@
         },
         "action": {
             "type": "Click"
-        },
-        "focus": {
-            "Node.PipelineNode.Failed": "支援梯队2失败",
-            "Node.PipelineNode.Starting": "支援梯队2"
         },
         "next": [
             "2好友梯队2"
@@ -466,10 +438,6 @@
                 ]
             }
         },
-        "focus": {
-            "Node.PipelineNode.Failed": "梯队出击1失败",
-            "Node.PipelineNode.Starting": "梯队出击1"
-        },
         "next": [
             "2右侧机场"
         ],
@@ -504,10 +472,6 @@
             }
         },
         "post_delay": 500,
-        "focus": {
-            "Node.PipelineNode.Failed": "梯队出击2失败",
-            "Node.PipelineNode.Starting": "梯队出击2"
-        },
         "next": [
             "2终止作战"
         ],
@@ -611,10 +575,6 @@
                     43
                 ]
             }
-        },
-        "focus": {
-            "Node.PipelineNode.Failed": "终止作战失败",
-            "Node.PipelineNode.Starting": "终止作战"
         },
         "next": [
             "2重新作战",
@@ -736,10 +696,6 @@
         "pre_delay": 500,
         "action": {
             "type": "Click"
-        },
-        "focus": {
-            "Node.PipelineNode.Failed": "重新作战失败",
-            "Node.PipelineNode.Starting": "重新作战"
         },
         "next": [
             "2作战开始"

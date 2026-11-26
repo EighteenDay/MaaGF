@@ -66,10 +66,6 @@
         "action": {
             "type": "Click"
         },
-        "focus": {
-            "Node.PipelineNode.Failed": "收取电池失败",
-            "Node.PipelineNode.Starting": "收取电池"
-        },
         "next": [
             "1点击关闭"
         ],
@@ -119,10 +115,6 @@
                     60
                 ]
             }
-        },
-        "focus": {
-            "Node.PipelineNode.Failed": "点击关闭失败",
-            "Node.PipelineNode.Starting": "点击关闭"
         },
         "next": [
             "1确认进入"
@@ -204,10 +196,6 @@
             }
         },
         "post_delay": 800,
-        "focus": {
-            "Node.PipelineNode.Failed": "点击移动失败",
-            "Node.PipelineNode.Starting": "点击移动"
-        },
         "next": [
             "1确认进入"
         ],
@@ -233,10 +221,6 @@
         "action": {
             "type": "Click"
         },
-        "focus": {
-            "Node.PipelineNode.Failed": "点赞失败",
-            "Node.PipelineNode.Starting": "点赞"
-        },
         "next": [
             "1确认点赞"
         ],
@@ -258,10 +242,6 @@
                     "留言"
                 ]
             }
-        },
-        "focus": {
-            "Node.PipelineNode.Failed": "确认点赞失败",
-            "Node.PipelineNode.Starting": "确认点赞"
         },
         "next": [
             "1确认进入"
@@ -286,10 +266,6 @@
                     120
                 ]
             }
-        },
-        "focus": {
-            "Node.PipelineNode.Failed": "确认进入失败",
-            "Node.PipelineNode.Starting": "确认进入"
         },
         "next": [
             "1收取电池",
