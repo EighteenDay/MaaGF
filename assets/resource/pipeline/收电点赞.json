@@ -316,6 +316,15 @@
                     57
                 ]
             }
+        },
+        "post_delay": 3000,
+        "next": [
+            "1收尾等待"
+        ]
+    },
+    "1收尾等待": {
+        "focus": {
+            "Node.PipelineNode.Starting": "收尾等待3秒"
         }
     },
     "1唤醒窗口": {
