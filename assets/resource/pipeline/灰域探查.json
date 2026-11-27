@@ -9,10 +9,6 @@
 		},
 		"pre_delay": 500,
 		"action": {"type": "Click"},
-		"focus": {
-			"Node.PipelineNode.Failed": "代理作战失败",
-			"Node.PipelineNode.Starting": "代理作战"
-		},
 		"next": [
 			"3点击确认"
 		],
@@ -48,20 +44,12 @@
 			}
 		},
 		"action": {"type": "Click"},
-		"focus": {
-			"Node.PipelineNode.Failed": "地图重置失败",
-			"Node.PipelineNode.Starting": "地图重置"
-		},
 		"next": [
 			"3硅状带"
 		]
 	},
 	"3开始作战": {
 		"post_delay": 3000,
-		"focus": {
-			"Node.PipelineNode.Failed": "开始作战失败",
-			"Node.PipelineNode.Starting": "开始作战"
-		},
 		"next": [
 			"3成果结算",
 			"3开始作战"
@@ -75,10 +63,6 @@
 					"地图.png"
 				]
 			}
-		},
-		"focus": {
-			"Node.PipelineNode.Failed": "开始重置失败",
-			"Node.PipelineNode.Starting": "开始重置"
 		},
 		"next": [
 			"3地图重置",
@@ -103,10 +87,6 @@
 		"repeat": 8,
 		"repeat_delay": 500,
 		"post_delay": 1000,
-		"focus": {
-			"Node.PipelineNode.Failed": "成果结算失败",
-			"Node.PipelineNode.Starting": "成果结算"
-		},
 		"next": [
 			"灰域探查"
 		]
@@ -139,10 +119,6 @@
 		},
 		"pre_delay": 500,
 		"action": {"type": "Click"},
-		"focus": {
-			"Node.PipelineNode.Failed": "点击确认失败",
-			"Node.PipelineNode.Starting": "点击确认"
-		},
 		"next": [
 			"3开始作战"
 		]
@@ -156,10 +132,6 @@
 			}
 		},
 		"action": {"type": "Click"},
-		"focus": {
-			"Node.PipelineNode.Failed": "硅状带失败",
-			"Node.PipelineNode.Starting": "硅状带"
-		},
 		"next": [
 			"3确定重置"
 		]
@@ -173,10 +145,6 @@
 			}
 		},
 		"action": {"type": "Click"},
-		"focus": {
-			"Node.PipelineNode.Failed": "确定重置失败",
-			"Node.PipelineNode.Starting": "确定重置"
-		},
 		"next": [
 			"灰域探查"
 		]
@@ -191,10 +159,6 @@
 		},
 		"pre_delay": 500,
 		"action": {"type": "Click"},
-		"focus": {
-			"Node.PipelineNode.Failed": "确认出击失败",
-			"Node.PipelineNode.Starting": "确认出击"
-		},
 		"next": [
 			"3代理作战"
 		],
@@ -213,10 +177,6 @@
 		},
 		"pre_delay": 1000,
 		"action": {"type": "Click"},
-		"focus": {
-			"Node.PipelineNode.Failed": "识别彩蛋失败",
-			"Node.PipelineNode.Starting": "识别彩蛋"
-		},
 		"next": [
 			"3确认出击"
 		]
@@ -242,10 +202,6 @@
 	},
 	"灰域探查": {
 		"post_delay": 8000,
-		"focus": {
-			"Node.PipelineNode.Failed": "灰域探查失败",
-			"Node.PipelineNode.Starting": "灰域探查"
-		},
 		"next": [
 			"3进入灰域",
 			"3识别彩蛋",
